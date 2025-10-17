@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+:root{
+    --color-purple: #8261B1;
+    --color-gray: #C5C5C5;
+    --color-text: #424242;
+}
