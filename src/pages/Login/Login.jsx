@@ -1,4 +1,4 @@
-import { Input } from "../../components/Input"
+import { Input } from "../../components/Input";
 
 export function Login(){
     return(
@@ -12,16 +12,16 @@ export function Login(){
                     <div className="space-y-2 mb-8">
                         <h1 className="text-4xl text-center font-bold text-[var(--color-purple)]">Login</h1>
                         <p className="text-lg">
-                            Já possui uma conta?{" "}
+                            Não possui uma conta?{" "}
                             <a href="#" className="font-semibold text-[var(--color-purple)]">Cadastre-se</a>
                             {/* <Link to="" className="font-semibold text-[var(--color-purple)]>Cadastre-se</Link> */}
                         </p>
                     </div>
 
                     <form className="flex flex-col mb-5">
-                        <Input label={"E-mail"} type={"email"} placeholder={"exemplo@gmail.com"}></Input>
+                        <Input label={"E-mail"} type={"email"} placeholder={""}></Input>
                         <Input label={"Senha"} type={"password"} placeholder={""}></Input>
-                        <a href="#" className="underline hover:text-[var(--color-purple)]"> Esqueci minha senha</a>
+                        <a href="#" className="underline hover:text-[var(--color-purple)]">Esqueci minha senha</a>
                         {/* <Link to="" className="underline hover:text-[var(--color-purple)]">Esqueci minha senha</Link> */}
                         <div className="flex justify-center mt-10">
                             <button className="w-[200px] h-8 bg-[var(--color-purple)] text-white font-bold rounded-2xl cursor-pointer">Entrar</button>

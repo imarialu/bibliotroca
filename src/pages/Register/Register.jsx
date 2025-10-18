@@ -1,0 +1,33 @@
+import { Input } from "../../components/Input";
+
+export function Register(){
+    return(
+        <main className="flex flex-row w-full h-screen">
+            <div className="w-[50%]">
+                <img src="#" alt="" />
+            </div>
+
+            <div className="flex flex-col w-[50%] bg-white text-[var(--color-text)] items-center aling-center justify-center">
+                <div className="space-y-2 mb-8">
+                    <h1 className="text-4xl text-center font-bold text-[var(--color-purple)]">Cadastro</h1>
+                    <p className="text-lg">
+                        Já possui uma conta?{" "}
+                        <a href="#" className="font-semibold text-[var(--color-purple)]">Faça Login</a>
+                        {/* <Link to="" className="font-semibold text-[var(--color-purple)]>Faça Login</Link> */}
+                    </p>
+                </div>
+
+                <form className="flex flex-col mb-5">
+                    <Input label={"Nome completo"} type={"text"} placeholder={""}></Input>
+                    <Input label={"E-mail"} type={"email"} placeholder={""}></Input>
+                    <Input label={"Senha"} type={"password"} placeholder={""}></Input>
+                    <Input label={"Confirmar senha"} type={"password"} placeholder={""}></Input>
+
+                    <div className="flex justify-center mt-8">
+                        <button className="w-[200px] h-8 bg-[var(--color-purple)] text-white font-bold rounded-2xl cursor-pointer">Criar Conta</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    )
+}
