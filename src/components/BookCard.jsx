@@ -2,7 +2,7 @@ import { DetailsButton } from "./DetailsButton"
 
 export function BookCard({imgBook, status, title, author, imgUser, nameUser}){
     return(
-        <div className="flex w-[350px] h-[180px] p-3 gap-2 border-1 rounded-md border-[var(--border-purple)] transition duration-500 ease hover:shadow-[0px_0px_5px_2px_rgba(198,_174,_230,_0.4)]">
+        <div className="flex w-[350px] h-[180px] p-3 gap-2 border-1 rounded-md border-[var(--color-transparent-purple)] transition duration-500 ease hover:shadow-[0px_0px_5px_2px_rgba(198,_174,_230,_0.4)]">
             <div className="w-[120px] rounded-md bg-[var(--color-gray)]">
                 <img src={imgBook} alt="" className="w-full"/>
             </div>
@@ -13,7 +13,7 @@ export function BookCard({imgBook, status, title, author, imgUser, nameUser}){
                 <p className="text-sm">{author}</p>
 
                 <DetailsButton/>
-                <hr className="text-[var(--border-purple)]"/>
+                <hr className="text-[var(--color-transparent-purple)]"/>
                 <div className="flex gap-2 items-center mt-2">
                     <div className="rounded-full bg-[var(--color-gray)] w-[25px] h-[25px]">
                         <img src={imgUser} alt="" />
