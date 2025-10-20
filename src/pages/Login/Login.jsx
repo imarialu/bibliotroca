@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { Input } from "../../components/Input";
 
-export function Login(){
+export default function Login(){
     return(
         <>
             <main className="flex flex-row w-full h-screen">
@@ -13,11 +14,11 @@ export function Login(){
                         <h1 className="text-4xl text-center font-bold text-[var(--color-purple)]">Login</h1>
                         <p className="text-lg">
                             Não possui uma conta?{" "}
-                            <a href="#" className="font-semibold text-[var(--color-purple)]">Cadastre-se</a>
-                            {/* <Link to="" className="font-semibold text-[var(--color-purple)]>Cadastre-se</Link> */}
+                            <Link to="/cadastro" className="font-semibold text-[var(--color-purple)]">Cadastre-se</Link>
                         </p>
                     </div>
 
+                    
                     <form className="flex flex-col mb-5">
                         <Input label={"E-mail"} type={"email"} placeholder={""}></Input>
                         <Input label={"Senha"} type={"password"} placeholder={""}></Input>

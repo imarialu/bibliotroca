@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { Input } from "../../components/Input";
 
-export function Register(){
+export default function Register(){
     return(
         <main className="flex flex-row w-full h-screen">
             <div className="w-[50%]">
@@ -12,8 +13,7 @@ export function Register(){
                     <h1 className="text-4xl text-center font-bold text-[var(--color-purple)]">Cadastro</h1>
                     <p className="text-lg">
                         Já possui uma conta?{" "}
-                        <a href="#" className="font-semibold text-[var(--color-purple)]">Faça Login</a>
-                        {/* <Link to="" className="font-semibold text-[var(--color-purple)]>Faça Login</Link> */}
+                        <Link to="/login" className="font-semibold text-[var(--color-purple)]">Faça Login</Link>
                     </p>
                 </div>
 
