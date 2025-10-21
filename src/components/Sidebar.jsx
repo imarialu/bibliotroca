@@ -17,16 +17,16 @@ export default function Sidebar(){
 
                 
                 <ul className="flex flex-col gap-4 items-center">
-                    <SidebarLink icon={<HiOutlineHome className="w-[25px] h-[25px]"/>} text={"Ínicio"}/>
-                    <SidebarLink icon={<PiBookBookmark className="w-[25px] h-[25px]"/>} text={"Livros"}/>
-                    <SidebarLink icon={<HiOutlineRefresh className="w-[25px] h-[25px]"/>} text={"Trocas"}/>
-                    <SidebarLink icon={<IoAddCircleOutline className="w-[25px] h-[25px]"/>} text={"Adicionar"}/> 
+                    <SidebarLink icon={<HiOutlineHome className="text-2xl"/>} text={"Ínicio"}/>
+                    <SidebarLink icon={<PiBookBookmark className="text-2xl"/>} text={"Livros"}/>
+                    <SidebarLink icon={<HiOutlineRefresh className="text-2xl"/>} text={"Trocas"}/>
+                    <SidebarLink icon={<IoAddCircleOutline className="text-2xl"/>} text={"Adicionar"}/> 
                     <div></div>
                 </ul>
 
 
                 <div>
-                    <a href="#"><LuLogOut className="w-[25px] h-[25px] transition duration-500 ease hover:text-[var(--color-darkpurple)]"/></a>
+                    <a href="#"><LuLogOut className="text-2xl transition duration-500 ease hover:text-[var(--color-darkpurple)]"/></a>
                 </div>
             </nav>
         </article>
