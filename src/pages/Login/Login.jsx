@@ -35,8 +35,11 @@ export default function Login(){
                         <hr className="w-[180px] border-[var(--color-gray)]"/>
                     </div>
 
-                    <button className="flex gap-2 px-2 py-1 border-1 border-[var(--color-purple)] rounded-sm cursor-pointer hover:text-[var(--color-purple)]"> 
-                        <img src="../assets/icons/icon-google.png" alt="Ícone do Google" className="size-[28px]"/>
+                    <button className="flex aling-center gap-2 px-2 py-1 border-1 border-[var(--color-purple)] rounded-sm cursor-pointer hover:text-[var(--color-purple)]">
+                        <div className="flex items-center justify-center w-[25px]">
+                            <img src="/icons/icon-google.png" alt="Ícone do Google" className="size-[20px] items-center"/>
+                        </div>
+                        
                         Entre com o Google
                     </button>
                 </div>
