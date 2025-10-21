@@ -3,8 +3,8 @@ import { DetailsButton } from "./DetailsButton"
 export function BookCard({image, status, title, author, imgUser, nameUser}){
     return(
         <div className="flex w-[350px] h-[180px] p-3 gap-2 border-1 rounded-md border-[var(--color-transparent-purple)] transition duration-500 ease hover:shadow-[0px_0px_5px_2px_rgba(198,_174,_230,_0.4)]">
-            <div className="w-[120px] rounded-md bg-[var(--color-gray)]">
-                <img src={image} alt="" className="w-full"/>
+            <div className="w-[120px]">
+                <img src={image} alt="Capa do livro" className="w-full rounded-md"/>
             </div>
 
             <div className="w-[250px]">

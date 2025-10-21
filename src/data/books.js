@@ -1,7 +1,7 @@
 const books = [
     {
         id: 1,
-        image: "",
+        image: "./imgs/pequena_coreografia_do_adeus.jpg",
         title: "Pequena Coreografia do Adeus",
         author: "Aline Bei",
         status: "Seminovo",
@@ -9,7 +9,7 @@ const books = [
     },
     {
         id: 2,
-        image: "",
+        image: "./imgs/tudo_e_rio.jpg",
         title: "Tudo é rio",
         author: "Carla Madeira",
         status: "Novo",
@@ -17,7 +17,7 @@ const books = [
     },
     {
         id: 4,
-        image: "",
+        image: "./imgs/daisy_jones_and_the_six.jpg",
         title: "Daisy Jones and The Six",
         author: "Taylor Jenkins Reid",
         status: "Antigo",
@@ -25,7 +25,7 @@ const books = [
     },
     {
         id: 3,
-        image: "",
+        image: "./imgs/aos_prantos_no_mercado.jpg",
         title: "Aos Prantos no Mercado",
         author: "Michelle Zauner",
         status: "Novo",
@@ -33,7 +33,7 @@ const books = [
     },
     {
         id: 5,
-        image: "",
+        image: "./imgs/o_hobbit.jpg",
         title: "O Hobbit",
         author: "J.K.K Tolkien",
         status: "Antigo",
@@ -41,7 +41,7 @@ const books = [
     },
     {
         id: 6,
-        image: "",
+        image: "./imgs/jogos_vorazes.jpg",
         title: "Jogos Vorazes",
         author: "Suzanne Collins",
         status: "Seminovo",
