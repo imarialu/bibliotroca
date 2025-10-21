@@ -7,7 +7,7 @@ import { IoAddCircleOutline } from 'react-icons/io5';
 import { LuLogOut } from 'react-icons/lu';
 
 
-export function Sidebar(){
+export default function Sidebar(){
     return(
         <article className="flex flex-col justify-center h-[100vh] w-[6%] fixed rounded-r-2xl bg-[var(--color-purple)]">
             <nav className="flex flex-col justify-between h-[90%] items-center text-white">

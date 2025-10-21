@@ -1,7 +1,42 @@
+import { useState } from 'react'
+import books from '../../data/books'
+import Sidebar from '../../components/Sidebar'
+import { BookCard } from '../../components/BookCard'
+
 export default function Home(){
-    return(
-        <main>
-            
-        </main>
+    return( 
+        <>
+            <Sidebar/>
+            <main className="flex justify-end">
+                <section className="w-[94%]">
+                    <section className="flex justify-center">
+                        <div className="w-[90%] h-[220px] m-10 rounded-2xl bg-[var(--color-gray)]"></div>
+                    </section>
+
+                    <section className="flex justify-center m-5">
+                        <input type="text" placeholder="Busque o livro que procura" className="w-[600px] pl-2 py-2 border-1 focus:outline-none"/>
+                        <button></button>
+                    </section>
+
+                    <section className="flex flex-col gap-5 items-center">
+                        <div className="justify-start w-[90%]">
+                            <h1 className="text-2xl text-[var(--color-purple)] font-semibold">Livros disponíveis</h1>
+                        </div>
+
+                        <div className="w-[90%] grid grid-cols-3 gap-y-8 justify-center">
+                            {books.map((book) => {
+                                return <BookCard
+                                    key={book.id}
+                                    image={book.image}
+                                    status={book.status}
+                                    title={book.title}
+                                    author={book.author}
+                                />
+                            })}
+                        </div>
+                    </section>
+                </section>
+            </main>
+        </>
     )
 }
