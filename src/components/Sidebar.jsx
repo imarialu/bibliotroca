@@ -9,7 +9,7 @@ import { LuLogOut } from 'react-icons/lu';
 
 export default function Sidebar(){
     return(
-        <article className="flex flex-col justify-center h-[100vh] w-[6%] fixed rounded-r-2xl bg-[var(--color-purple)]">
+        <aside className="flex flex-col justify-center h-screen w-20 fixed rounded-r-2xl bg-[var(--color-purple)]">
             <nav className="flex flex-col justify-between h-[90%] items-center text-white">
                 <div>
                     <p>LOGO</p>
@@ -29,6 +29,6 @@ export default function Sidebar(){
                     <a href="#"><LuLogOut className="text-2xl transition duration-500 ease hover:text-[var(--color-darkpurple)]"/></a>
                 </div>
             </nav>
-        </article>
+        </aside>
     )
 }

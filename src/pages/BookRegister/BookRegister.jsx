@@ -5,8 +5,8 @@ export default function BookRegister(){
     return(
         <>
             <Sidebar/>
-            <main className="flex justify-center items-center h-screen">
-                <section className="">
+            <main className="flex justify-center items-center min-h-screen h-full">
+                <section className="ml-20">
                     <div className="text-2xl font-bold text-[var(--color-purple)] mb-5">
                         <h1>Cadastre um novo livro para troca</h1>
                     </div>
@@ -63,55 +63,6 @@ export default function BookRegister(){
                                 </div>
                             </div>
                         </div>
-
-                        {/* <div className="grid grid-cols-2 gap-y-6 gap-x-5">
-                            <div className="col-span-1">
-                                <Input label={"Título"}/>
-                                <Input label={"Autor"}/>
-
-                                <label htmlFor="estado">Estado do livro</label>
-                                <div className="flex gap-4">
-                                    <label htmlFor="newBook" className="flex gap-2">
-                                        <input type="radio" name="newBook" id="newBook" />
-                                        Novo
-                                    </label>
-                                    
-                                    <label htmlFor="almostNew" className="flex gap-2">
-                                        <input type="radio" name="almostNew" id="almostNew" />
-                                        Seminovo
-                                    </label>
-
-                                    <label htmlFor="oldBook" className="flex gap-2">
-                                        <input type="radio" name="oldBook" id="oldBook" />
-                                        Antigo
-                                    </label>
-                                </div>
-
-                                <div className="flex flex-col">
-                                    <label htmlFor="description">Descrição sobre o livro</label>
-                                    <textarea name="description" id="description" rows="6" cols="50" className="border-1"></textarea>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <Input label={"Quantidade de páginas"}/>
-                                <div className="flex flex-col">
-                                    <label htmlFor="category">Categoria</label>
-                                    <select name="category" id="category" className="w-[300px] h-8 border-1 mt-2 rounded-sm">
-                                        <option value="">Selecione a categoria</option>
-                                        <option value="romance">Romance</option>
-                                        <option value="drama">Drama</option>
-                                        <option value="terror">Terror</option>
-                                        <option value="suspense">Suspense</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div>
-                                
-                            </div>
-
-                        </div> */}
                     </form>
                 </section>
             </main>
