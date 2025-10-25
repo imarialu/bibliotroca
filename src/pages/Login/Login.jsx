@@ -25,7 +25,7 @@ export default function Login(){
                         <a href="#" className="underline hover:text-[var(--color-purple)]">Esqueci minha senha</a>
                         {/* <Link to="" className="underline hover:text-[var(--color-purple)]">Esqueci minha senha</Link> */}
                         <div className="flex justify-center mt-10">
-                            <button className="w-[200px] h-8 bg-[var(--color-purple)] text-white font-bold rounded-2xl cursor-pointer">Entrar</button>
+                            <button className="w-[200px] h-8 bg-[var(--color-purple)] text-white font-bold rounded-full cursor-pointer">Entrar</button>
                         </div>
                     </form>
 
@@ -39,7 +39,6 @@ export default function Login(){
                         <div className="flex items-center justify-center w-[25px]">
                             <img src="/icons/icon-google.png" alt="Ícone do Google" className="size-[20px] items-center"/>
                         </div>
-                        
                         Entre com o Google
                     </button>
                 </div>

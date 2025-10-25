@@ -24,7 +24,7 @@ export default function Register(){
                     <Input label={"Confirmar senha"} type={"password"} placeholder={""}></Input>
 
                     <div className="flex justify-center mt-8">
-                        <button className="w-[200px] h-8 bg-[var(--color-purple)] text-white font-bold rounded-2xl cursor-pointer">Criar Conta</button>
+                        <button className="w-[200px] h-8 bg-[var(--color-purple)] text-white font-bold rounded-full cursor-pointer">Criar Conta</button>
                     </div>
                 </form>
             </div>
