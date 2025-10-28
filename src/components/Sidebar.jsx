@@ -2,7 +2,6 @@ import { SidebarLink } from './SidebarLink';
 
 import { HiOutlineHome } from 'react-icons/hi2';
 import { PiBookBookmark } from 'react-icons/pi';
-import { HiOutlineRefresh } from 'react-icons/hi';
 import { IoAddCircleOutline } from 'react-icons/io5';
 import { LuLogOut } from 'react-icons/lu';
 import { AiOutlineInfoCircle } from 'react-icons/ai';

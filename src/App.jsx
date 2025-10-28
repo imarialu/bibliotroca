@@ -3,6 +3,7 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Home from './pages/Home/Home';
 import BookRegister from './pages/BookRegister/BookRegister';
+import MyBooks from './pages/MyBooks/MyBooks';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login/>}/>
           <Route path='/cadastro' element={<Register/>}/>
-          <Route path='/oi' element={<Home/>}/>
-          <Route path='/' element={<BookRegister/>}/>
+          <Route path='/inicio' element={<Home/>}/>
+          <Route path='/cadastro-de-livros' element={<BookRegister/>}/>
+          <Route path='/' element={<MyBooks/>}/>
         </Routes>
       </Router>
     </>
