@@ -5,28 +5,28 @@ import { PiBookBookmark } from 'react-icons/pi';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { IoAddCircleOutline } from 'react-icons/io5';
 import { LuLogOut } from 'react-icons/lu';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
 
 
 export default function Sidebar(){
     return(
-        <aside className="flex flex-col justify-center h-screen w-20 fixed rounded-r-2xl bg-[var(--color-purple)]">
-            <nav className="flex flex-col justify-between h-[90%] items-center text-white">
+        <aside className="flex flex-col justify-center h-[98%] m-2 p-4 fixed rounded-2xl bg-[var(--color-purple)]">
+            <nav className="flex flex-col justify-between h-[95%] items-center text-[var(--color-darkpurple)]">
                 <div>
                     <p>LOGO</p>
+                    <hr className="mt-3 text-[var(--color-darkpurple)]"/>
+
+                    <ul className="flex flex-col gap-5 items-center mt-5">
+                        <SidebarLink icon={<HiOutlineHome className="text-2xl"/>}/>
+                        <SidebarLink icon={<PiBookBookmark className="text-2xl"/>}/>
+                        <SidebarLink icon={<IoAddCircleOutline className="text-2xl"/>}/> 
+                        <SidebarLink icon={<AiOutlineInfoCircle className="text-2xl"/>}/>
+                        <div></div>
+                </ul>
                 </div>
 
-                
-                <ul className="flex flex-col gap-4 items-center">
-                    <SidebarLink icon={<HiOutlineHome className="text-2xl"/>} text={"Ínicio"}/>
-                    <SidebarLink icon={<PiBookBookmark className="text-2xl"/>} text={"Livros"}/>
-                    <SidebarLink icon={<HiOutlineRefresh className="text-2xl"/>} text={"Trocas"}/>
-                    <SidebarLink icon={<IoAddCircleOutline className="text-2xl"/>} text={"Adicionar"}/> 
-                    <div></div>
-                </ul>
-
-
                 <div>
-                    <a href="#"><LuLogOut className="text-2xl transition duration-500 ease hover:text-[var(--color-darkpurple)]"/></a>
+                    <SidebarLink icon={<LuLogOut className="text-2xl"/>}/>
                 </div>
             </nav>
         </aside>

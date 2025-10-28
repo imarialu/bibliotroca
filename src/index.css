@@ -8,6 +8,7 @@ body{
     /* Cores */
     --color-purple: #8261B1;
     --color-transparent-purple: rgba(198, 174, 230, 0.4);
+    --color-transparent-darkpurple: rgba(89, 42, 154, 0.6);
     --color-purple-hover: rgba(198, 174, 230, 0.747);
     --color-darkpurple: #542891;
     --color-gray: #C5C5C5;
