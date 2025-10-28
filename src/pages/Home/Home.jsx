@@ -14,7 +14,7 @@ export default function Home(){
                     </section>
 
                     <section className="flex justify-center m-5">
-                        <input type="text" placeholder="Busque o livro que procura" className="w-[600px] pl-2 py-2 border-1 focus:outline-none"/>
+                        <input type="text" placeholder="Busque o livro que procura" className="w-[500px] pl-5 py-2 mb-5 border-1 border-[var(--color-gray)] rounded-full focus:outline-none focus:border-[var(--color-purple)]"/>
                         <button></button>
                     </section>
 
