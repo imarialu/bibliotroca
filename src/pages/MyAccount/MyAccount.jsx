@@ -15,7 +15,7 @@ export default function MyAccount(){
         <>
             <Sidebar/>
             <main className="flex flex-col items-center min-h-screen h-full"> 
-                <section className="ml-20 w-[70%]">
+                <section className="ml-20 w-[80%]">
                     <div className="flex justify-start text-2xl font-bold text-[var(--color-purple)] mt-10 mb-8">
                         <h1>Minha Conta</h1>
                     </div>
