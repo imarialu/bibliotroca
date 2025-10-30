@@ -1,0 +1,44 @@
+import { Input } from "../../../components/Input"
+
+export default function MyProfileForm(){
+    return(
+        <form className="p-8 rounded-md shadow-[0px_0px_5px_2px_rgba(198,_174,_230,_0.4)]">
+            <h1 className="mb-5 text-xl font-bold text-[var(--color-purple)]">Dados Pessoais</h1>
+
+            <div className="flex items-center gap-5">
+                <div className="w-[80px] h-[80px] rounded-full bg-gray-200">
+                    {/* Foto de perfil do usuário */}
+                </div>
+                
+                <button className="rounded-full py-1 px-8 bg-[var(--color-transparent-purple)] text-[var(--color-purple)] font-semibold cursor-pointer transition duration-400 ease hover:bg-[var(--color-purple-hover)]">Alterar</button>
+            </div>
+
+            <hr className="mt-5 text-[var(--color-purple)]"/>
+
+            <div className="mt-5">
+                <div className="grid grid-cols-2 gap-6">
+                    <Input label={"Nome completo"}/>
+                    <Input label={"Telefone"}/>
+                </div>
+
+                <div className="grid grid-cols-1">
+                    <Input label={"Endereço"}/>
+                </div>
+
+                <div className="grid grid-cols-2 gap-6">
+                    <Input label={"Número"}/>
+                    <Input label={"CEP"}/>
+                </div>
+
+                <div className="grid grid-cols-2 gap-6">
+                    <Input label={"Estado"}/>
+                    <Input label={"Cidade"}/>
+                </div>
+            </div>
+
+            <div className="flex justify-center">
+                <button className="py-1 px-8 rounded-full bg-[var(--color-purple)] text-white font-semibold cursor-pointer mt-5">Salvar</button>
+            </div>
+        </form>
+    )
+}
