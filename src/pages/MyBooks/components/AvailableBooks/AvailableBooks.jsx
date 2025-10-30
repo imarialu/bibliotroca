@@ -1,5 +1,6 @@
-import { MdEdit } from 'react-icons/md';
-import { MdDelete } from 'react-icons/md';
+import { MdOutlineModeEdit } from 'react-icons/md'; 
+import { MdOutlineDelete } from 'react-icons/md';
+
 
 import ExchangedButton from './ExchangedButton';
  
@@ -23,10 +24,10 @@ import ExchangedButton from './ExchangedButton';
                         <div className="flex justify-between items-center">
                             <div className="flex gap-2">
                                 <button className="flex items-center p-1 border-1 border-[var(--color-purple)] rounded-full text-[var(--color-purple)] transition duration-400 ease hover:bg-[var(--color-transparent-purple)] cursor-pointer">
-                                    <MdEdit className="text-2xl"/>
+                                    <MdOutlineModeEdit className="text-2xl"/>
                                 </button>
                                 <button className="flex items-center p-1 border-1 border-[var(--color-purple)] rounded-full text-[var(--color-purple)] transition duration-400 ease hover:bg-[var(--color-transparent-purple)] cursor-pointer">
-                                    <MdDelete className="text-2xl"/>
+                                    <MdOutlineDelete className="text-2xl"/>
                                 </button>
                             </div>
 
