@@ -9,7 +9,9 @@ export function BookCard({image, status, title, author, imgUser, nameUser}){
 
             <div className="w-[250px]">
                 <p className="text-sm font-semibold">{status}</p>
-                <h2 className="text-base font-medium">{title.length > 24 ? `${title.substring(0, 25)}...` : title}</h2>
+                <h2 className="text-base font-medium">
+                    {title.length > 26 ? `${title.substring(0, 25)}...` : title}
+                </h2>
                 <p className="text-sm">{author}</p>
 
                 <DetailsButton/>

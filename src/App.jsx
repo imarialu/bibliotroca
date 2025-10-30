@@ -14,7 +14,7 @@ function App() {
           <Route path='/cadastro' element={<Register/>}/>
           <Route path='/inicio' element={<Home/>}/>
           <Route path='/cadastro-de-livros' element={<BookRegister/>}/>
-          <Route path='/' element={<MyBooks/>}/>
+          <Route path='/meus-livros' element={<MyBooks/>}/>
         </Routes>
       </Router>
     </>
