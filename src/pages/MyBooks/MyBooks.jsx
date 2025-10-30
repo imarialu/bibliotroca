@@ -4,7 +4,7 @@ import { PiBooks } from 'react-icons/pi';
 import { HiOutlineRefresh } from 'react-icons/hi';
 
 import Sidebar from "../../components/Sidebar"
-import Button from "./components/Button";
+import GhostButton from "./components/GhostButton";
 import AvailableBooksSection from "./components/AvailableBooks/AvailableBooksSection";
 import ExchangedBooksSection from "./components/ExchangedBooks/ExchangedBooksSection";
 
@@ -21,19 +21,19 @@ export default function MyBooks(){
                     </div>
 
                     <div className="flex gap-5">
-                        <Button 
+                        <GhostButton 
                             isActive={activeContainer === "container-available"} 
                             onClick={() => setActiveContainer("container-available")} 
                             icon={<PiBooks className="text-2xl"/>} 
                             text={"Disponíveis"}>
-                        </Button>
+                        </GhostButton>
 
-                        <Button 
+                        <GhostButton 
                             isActive={activeContainer === "container-exchanged"} 
                             onClick={() => setActiveContainer("container-exchanged")} 
                             icon={<HiOutlineRefresh className="text-2xl"/>} 
                             text={"Trocados"}>
-                        </Button>
+                        </GhostButton>
                     </div>
                     <hr className="mt-4 text-[var(--color-purple)]"/>
                 </header>
