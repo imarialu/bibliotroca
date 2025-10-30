@@ -38,7 +38,7 @@ export default function MyBooks(){
                     <hr className="mt-4 text-[var(--color-purple)]"/>
                 </header>
 
-                <section className="ml-20 w-[80%] ">
+                <section className="ml-20 w-[80%]">
                     {activeContainer === "container-available" && <AvailableBooksSection/>}
                     {activeContainer === "container-exchanged" && <ExchangedBooksSection/>}
                 </section>
