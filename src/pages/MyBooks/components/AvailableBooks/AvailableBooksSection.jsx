@@ -1,0 +1,21 @@
+import books from "../../../../data/books"
+import AvailableBooks from "./AvailableBooks"
+
+export default function AvailableBooksSection(){
+    return(
+        <>
+            <div className="grid grid-cols-3 gap-y-8 gap-x-6 justify-cente mt-10 mb-10">
+                {/* Dados usados apenas para desenvolvimento */}
+                {books.map((book) => {
+                    return <AvailableBooks
+                        key={book.id}
+                        image={book.image}
+                        status={book.status}
+                        title={book.title}
+                        author={book.author}
+                    />
+                })}
+            </div>
+        </>
+    )
+}

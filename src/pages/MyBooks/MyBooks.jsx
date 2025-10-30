@@ -5,8 +5,8 @@ import { HiOutlineRefresh } from 'react-icons/hi';
 
 import Sidebar from "../../components/Sidebar"
 import Button from "./components/Button";
-import AvailableBooks from "./components/AvailableBooks";
-import ExchangedBooks from "./components/ExchangedBooks";
+import AvailableBooksSection from "./components/AvailableBooks/AvailableBooksSection";
+import ExchangedBooksSection from "./components/ExchangedBooks/ExchangedBooksSection";
 
 export default function MyBooks(){
     const [activeContainer, setActiveContainer] = useState("container-available");
@@ -38,9 +38,9 @@ export default function MyBooks(){
                     <hr className="mt-4 text-[var(--color-purple)]"/>
                 </header>
 
-                <section className="ml-20 w-[80%]">
-                    {activeContainer === "container-available" && <AvailableBooks/>}
-                    {activeContainer === "container-exchanged" && <ExchangedBooks/>}
+                <section className="ml-20 w-[80%] ">
+                    {activeContainer === "container-available" && <AvailableBooksSection/>}
+                    {activeContainer === "container-exchanged" && <ExchangedBooksSection/>}
                 </section>
             </main>
         </>
