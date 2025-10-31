@@ -1,4 +1,5 @@
 import { Input } from "../../../components/Input"
+import FilledButton from "../../../components/FilledButton"
 
 export default function MyProfileForm(){
     return(
@@ -36,8 +37,8 @@ export default function MyProfileForm(){
                 </div>
             </div>
 
-            <div className="flex justify-center">
-                <button className="py-1 px-8 rounded-full bg-[var(--color-purple)] text-white font-semibold cursor-pointer mt-5">Salvar</button>
+            <div className="flex justify-center mt-5">
+                <FilledButton text={"Salvar"}/>
             </div>
         </form>
     )

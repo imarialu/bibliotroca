@@ -1,4 +1,5 @@
 import { Input } from "../../../components/Input"
+import FilledButton from "../../../components/FilledButton"
 
 export default function SecurityForm(){
     return(
@@ -19,8 +20,8 @@ export default function SecurityForm(){
                 </div>
             </div>
 
-            <div>
-                <button className="py-1 px-8 rounded-full bg-[var(--color-purple)] text-white font-semibold cursor-pointer mt-5">Atualizar Senha</button>
+            <div className="mt-5">
+                <FilledButton text={"Atualizar Senha"}/>
             </div>
         </form>
     )

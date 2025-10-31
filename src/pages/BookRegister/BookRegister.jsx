@@ -1,5 +1,6 @@
 import { Input } from "../../components/Input";
 import Sidebar from "../../components/Sidebar";
+import FilledButton from "../../components/FilledButton";
 
 export default function BookRegister(){
     return(
@@ -70,7 +71,7 @@ export default function BookRegister(){
                         </div>
 
                         <div className="mt-8">
-                            <button className="py-1 px-5 border-1 rounded-full bg-[var(--color-purple)] text-white font-semibold cursor-pointer">Cadastrar livro</button>
+                            <FilledButton text={"Cadastrar livro"}/>
                         </div>
                     </form>
                 </section>
