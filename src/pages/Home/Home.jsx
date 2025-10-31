@@ -23,7 +23,7 @@ export default function Home(){
                             <h1 className="text-2xl text-[var(--color-purple)] font-semibold">Livros disponíveis</h1>
                         </div>
 
-                        <div className="max-w-[1100px] w-full grid grid-cols-3 gap-y-8 gap-x-6 justify-cente mb-10">
+                        <div className="max-w-[1100px] w-full grid grid-cols-3 gap-y-6 gap-x-6 justify-cente mb-10">
                             {books.map((book) => {
                                 return <BookCard
                                     key={book.id}
