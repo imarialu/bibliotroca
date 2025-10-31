@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PiBooks } from 'react-icons/pi';
 import { HiOutlineRefresh } from 'react-icons/hi';
 
-import Sidebar from "../../components/Sidebar"
+import MainLayout from "../../layouts/MainLayout";
 import GhostButton from "./components/GhostButton";
 import AvailableBooksSection from "./components/AvailableBooks/AvailableBooksSection";
 import ExchangedBooksSection from "./components/ExchangedBooks/ExchangedBooksSection";
@@ -13,8 +13,7 @@ export default function MyBooks(){
 
     return (
         <>
-            <Sidebar/>
-            <main className="flex flex-col items-center min-h-screen h-full">
+            <MainLayout>
                 <header className="ml-20 w-[80%]">
                     <div className="flex justify-start text-2xl font-bold text-[var(--color-purple)] mt-10 mb-8">
                         <h1>Meus Livros</h1>
@@ -42,7 +41,7 @@ export default function MyBooks(){
                     {activeContainer === "container-available" && <AvailableBooksSection/>}
                     {activeContainer === "container-exchanged" && <ExchangedBooksSection/>}
                 </section>
-            </main>
+            </MainLayout>
         </>
     )
 }

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaRegUser } from 'react-icons/fa6';
 import { LuKeyRound } from 'react-icons/lu';
 
-import Sidebar from "../../components/Sidebar";
+import MainLayout from "../../layouts/MainLayout";
 import Button from "./components/Button";
 import MyProfileForm from "./components/MyProfileForm";
 import SecurityForm from "./components/SecurityForm";
@@ -13,8 +13,7 @@ export default function MyAccount(){
 
     return(
         <>
-            <Sidebar/>
-            <main className="flex flex-col items-center min-h-screen h-full"> 
+            <MainLayout>
                 <section className="ml-20 w-[80%]">
                     <div className="flex justify-start text-2xl font-bold text-[var(--color-purple)] mt-10 mb-8">
                         <h1>Minha Conta</h1>
@@ -45,7 +44,7 @@ export default function MyAccount(){
                         </section>
                     </div>
                 </section>
-            </main>
+            </MainLayout>
         </>
     )
 }

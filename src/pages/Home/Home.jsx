@@ -1,13 +1,14 @@
 import { useState } from 'react'
+
 import books from '../../data/books'
+import MainLayout from "../../layouts/MainLayout";
 import Sidebar from '../../components/Sidebar'
 import { BookCard } from '../../components/BookCard'
 
 export default function Home(){
     return( 
         <>
-            <Sidebar/>
-            <main className="flex justify-center">
+            <MainLayout>
                 <section className="ml-20">
                     <section className="flex justify-center">
                         <div className="w-[1100px] h-[220px] m-10 rounded-2xl bg-[var(--color-gray)]"></div>
@@ -36,7 +37,7 @@ export default function Home(){
                         </div>
                     </section>
                 </section>
-            </main>
+            </MainLayout>
         </>
     )
 }

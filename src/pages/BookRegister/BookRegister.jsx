@@ -1,3 +1,4 @@
+import MainLayout from "../../layouts/MainLayout";
 import { Input } from "../../components/Input";
 import Sidebar from "../../components/Sidebar";
 import FilledButton from "../../components/FilledButton";
@@ -5,10 +6,9 @@ import FilledButton from "../../components/FilledButton";
 export default function BookRegister(){
     return(
         <>
-            <Sidebar/>
-            <main className="flex justify-center items-center min-h-screen h-full">
+            <MainLayout>
                 <section className="ml-20">
-                    <div className="flex justify-center text-2xl font-bold text-[var(--color-purple)] mb-8">
+                    <div className="flex text-2xl font-bold text-[var(--color-purple)] mt-10 mb-8">
                         <h1>Cadastre um novo livro para troca</h1>
                     </div>
                     
@@ -75,7 +75,7 @@ export default function BookRegister(){
                         </div>
                     </form>
                 </section>
-            </main>
+            </MainLayout>
         </>
     )
 } 
