@@ -4,6 +4,7 @@ import { PiBooks } from 'react-icons/pi';
 import { HiOutlineRefresh } from 'react-icons/hi';
 
 import MainLayout from "../../layouts/MainLayout";
+import Heading from "../../components/Heading";
 import GhostButton from "./components/GhostButton";
 import AvailableBooksSection from "./components/AvailableBooks/AvailableBooksSection";
 import ExchangedBooksSection from "./components/ExchangedBooks/ExchangedBooksSection";
@@ -15,9 +16,7 @@ export default function MyBooks(){
         <>
             <MainLayout>
                 <header className="ml-20 w-[80%]">
-                    <div className="flex justify-start text-2xl font-bold text-[var(--color-purple)] mt-10 mb-8">
-                        <h1>Meus Livros</h1>
-                    </div>
+                    <Heading text={"Meus Livros"}/>
 
                     <div className="flex gap-5">
                         <GhostButton 

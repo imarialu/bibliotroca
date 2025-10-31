@@ -4,6 +4,7 @@ import { FaRegUser } from 'react-icons/fa6';
 import { LuKeyRound } from 'react-icons/lu';
 
 import MainLayout from "../../layouts/MainLayout";
+import Heading from "../../components/Heading";
 import Button from "./components/Button";
 import MyProfileForm from "./components/MyProfileForm";
 import SecurityForm from "./components/SecurityForm";
@@ -14,11 +15,11 @@ export default function MyAccount(){
     return(
         <>
             <MainLayout>
+                <header className="ml-20 w-[80%]">
+                    <Heading text={"Minha Conta"}/>
+                </header>
+                
                 <section className="ml-20 w-[80%]">
-                    <div className="flex justify-start text-2xl font-bold text-[var(--color-purple)] mt-10 mb-8">
-                        <h1>Minha Conta</h1>
-                    </div>
-                    
                     <div className="grid grid-cols-4">
                         <div className="flex flex-col w-[200px] h-[83px] border-1 border-[var(--color-transparent-purple)] rounded-sm">
                             <Button

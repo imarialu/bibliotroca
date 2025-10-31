@@ -1,17 +1,17 @@
 import MainLayout from "../../layouts/MainLayout";
+import Heading from "../../components/Heading";
 import { Input } from "../../components/Input";
-import Sidebar from "../../components/Sidebar";
 import FilledButton from "../../components/FilledButton";
 
 export default function BookRegister(){
     return(
         <>
             <MainLayout>
+                <header className="ml-20 w-[80%]">
+                    <Heading text={"Cadastre um novo livro para troca"}/>
+                </header>
+
                 <section className="ml-20">
-                    <div className="flex text-2xl font-bold text-[var(--color-purple)] mt-10 mb-8">
-                        <h1>Cadastre um novo livro para troca</h1>
-                    </div>
-                    
                     <form className="flex flex-col items-center p-8 border-1 rounded-sm border-none shadow-[0px_0px_5px_2px_rgba(198,_174,_230,_0.4)]">
                         <div className="flex">
                             <div className=" flex flex-col justify-between mr-8">
