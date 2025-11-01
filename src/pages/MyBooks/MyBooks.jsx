@@ -33,7 +33,7 @@ export default function MyBooks(){
                             text={"Trocados"}>
                         </GhostButton>
                     </div>
-                    <hr className="mt-4 text-[var(--color-purple)]"/>
+                    <hr className="mt-4 text-purple"/>
                 </header>
 
                 <section className="ml-20 w-[80%]">

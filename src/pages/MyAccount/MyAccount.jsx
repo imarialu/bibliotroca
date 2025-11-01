@@ -21,7 +21,7 @@ export default function MyAccount(){
                 
                 <section className="ml-20 w-[80%]">
                     <div className="grid grid-cols-4">
-                        <div className="flex flex-col w-[200px] h-[83px] border-1 border-[var(--color-transparent-purple)] rounded-sm">
+                        <div className="flex flex-col w-[200px] h-[83px] border border-purple-tr rounded-sm">
                             <Button
                                 isActive={activeForm === "profile-form"}
                                 onClick={() => setActiveForm("profile-form")}
@@ -29,7 +29,7 @@ export default function MyAccount(){
                                 text={"Meu Perfil"}>
                             </Button>
 
-                            <hr className="text-[var(--color-transparent-purple)]"/>
+                            <hr className="text-purple-tr"/>
 
                             <Button 
                                 isActive={activeForm === "security-form"}

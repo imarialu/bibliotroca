@@ -12,11 +12,11 @@ export default function BookRegister(){
                 </header>
 
                 <section className="ml-20">
-                    <form className="flex flex-col items-center p-8 border-1 rounded-sm border-none shadow-[0px_0px_5px_2px_rgba(198,_174,_230,_0.4)]">
+                    <form className="flex flex-col items-center p-8 border rounded-sm border-none shadow-cont">
                         <div className="flex">
                             <div className=" flex flex-col justify-between mr-8">
                                 <img src="#" alt="" className="h-[85%] rounded-sm bg-gray-300"/>
-                                <div className="rounded-full py-1 px-8 bg-[var(--color-transparent-purple)] text-[var(--color-purple)] font-semibold cursor-pointer transition duration-400 ease hover:bg-[var(--color-purple-hover)]">
+                                <div className="rounded-full py-1 px-8 bg-purple-tr text-purple font-semibold cursor-pointer transition duration-400 ease hover:bg-purple-h">
                                     <input type="file" id="foto" className="hidden"/>
                                     <label htmlFor="foto">Selecionar imagem</label>
                                 </div>
@@ -32,7 +32,7 @@ export default function BookRegister(){
                                         <Input label={"Autor"}/>
                                         <div className="flex flex-col">
                                             <label htmlFor="category">Categoria</label>
-                                            <select name="category" id="category" className="w-[300px] h-8 mt-2 pl-2 border-1 border-[var(--color-gray)] rounded-sm focus:outline-none focus:border-[var(--color-purple)]">
+                                            <select name="category" id="category" className="w-[300px] h-8 mt-2 pl-2 border border-gray rounded-sm focus:outline-none focus:border-purple">
                                                 <option value="">Selecione a categoria</option>
                                                 <option value="romance">Romance</option>
                                                 <option value="drama">Drama</option>
@@ -64,7 +64,7 @@ export default function BookRegister(){
 
                                     <div className="flex flex-col">
                                         <label htmlFor="description" className="text-lg mb-1">Descrição sobre o livro</label>
-                                        <textarea name="description" id="description" rows="5" className="resize-none p-2 border-1 border-[var(--color-gray)] rounded-sm focus:outline-none focus:border-[var(--color-purple)]"></textarea>
+                                        <textarea name="description" id="description" rows="5" className="resize-none p-2 border border-gray rounded-sm focus:outline-none focus:border-purple"></textarea>
                                     </div>
                                 </div>
                             </div>

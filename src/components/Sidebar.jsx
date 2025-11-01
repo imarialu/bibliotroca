@@ -10,11 +10,11 @@ import { FaRegUser } from 'react-icons/fa6';
 
 export default function Sidebar(){
     return(
-        <aside className="flex flex-col justify-center h-[98%] m-2 p-4 fixed rounded-2xl bg-[var(--color-purple)]">
-            <nav className="flex flex-col justify-between h-[95%] items-center text-[var(--color-darkpurple)]">
+        <aside className="flex flex-col justify-center h-[98%] m-2 p-4 fixed rounded-2xl bg-purple">
+            <nav className="flex flex-col justify-between h-[95%] items-center">
                 <div>
-                    <p>LOGO</p>
-                    <hr className="mt-3 text-[var(--color-darkpurple)]"/>
+                    <p className="text-darkpurple">LOGO</p>
+                    <hr className="mt-3 text-darkpurple"/>
 
                     <ul className="flex flex-col gap-5 items-center mt-5">
                         <SidebarLink url={"/"} icon={<HiOutlineHome className="text-2xl"/>}/>

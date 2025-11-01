@@ -7,7 +7,7 @@ import ExchangedButton from './ExchangedButton';
  export default function AvailableBooks({image, status, title, author}){
     return(
         <>
-            <div className="flex w-[350px] h-[180px] p-3 gap-2 border-1 rounded-md border-[var(--color-transparent-purple)]">
+            <div className="flex w-[350px] h-[180px] p-3 gap-2 border rounded-md border-purple-tr">
                 <div className="w-[120px] h-[155px]">
                     <img src={image} alt="Capa do livro" className="w-full h-full rounded-md"/>
                 </div>
@@ -22,13 +22,13 @@ import ExchangedButton from './ExchangedButton';
                     </div>
 
                     <div className="items-center mt-2">
-                        <hr className="text-[var(--color-transparent-purple)] mb-2"/>
+                        <hr className="text-purple-tr mb-2"/>
                         <div className="flex justify-between items-center">
                             <div className="flex gap-2">
-                                <button className="flex items-center p-1 border-1 border-[var(--color-purple)] rounded-full text-[var(--color-purple)] transition duration-400 ease hover:bg-[var(--color-transparent-purple)] cursor-pointer">
+                                <button className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
                                     <MdOutlineModeEdit className="text-2xl"/>
                                 </button>
-                                <button className="flex items-center p-1 border-1 border-[var(--color-purple)] rounded-full text-[var(--color-purple)] transition duration-400 ease hover:bg-[var(--color-transparent-purple)] cursor-pointer">
+                                <button className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
                                     <MdOutlineDelete className="text-2xl"/>
                                 </button>
                             </div>

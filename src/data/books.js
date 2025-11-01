@@ -35,7 +35,7 @@ const books = [
         id: 5,
         image: "./imgs/o_hobbit.jpg",
         title: "O Hobbit",
-        author: "J.K.K Tolkien",
+        author: "J.R.R Tolkien",
         status: "Antigo",
         description: "Trocado em sebo a bastante tempo, possui marcas na capa, páginas escurecidas e com algumas anotações. Fora isso o livro está ótimo para leitura e garanto que vale a pena!"
     },

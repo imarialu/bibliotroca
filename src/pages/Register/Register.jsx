@@ -8,12 +8,12 @@ export default function Register(){
                 <img src="#" alt="" />
             </div>
 
-            <div className="flex flex-col w-[50%] bg-white text-[var(--color-text)] items-center aling-center justify-center">
+            <div className="flex flex-col w-[50%] bg-white items-center justify-center">
                 <div className="space-y-2 mb-8">
-                    <h1 className="text-4xl text-center font-bold text-[var(--color-purple)]">Cadastro</h1>
+                    <h1 className="text-4xl text-center font-bold text-purple">Cadastro</h1>
                     <p className="text-lg">
                         Já possui uma conta?{" "}
-                        <Link to="/login" className="font-semibold text-[var(--color-purple)]">Faça Login</Link>
+                        <Link to="/login" className="font-semibold text-purple">Faça Login</Link>
                     </p>
                 </div>
 
@@ -24,7 +24,7 @@ export default function Register(){
                     <Input label={"Confirmar senha"} type={"password"} placeholder={""}></Input>
 
                     <div className="flex justify-center mt-8">
-                        <button className="w-[200px] h-8 bg-[var(--color-purple)] text-white font-bold rounded-full cursor-pointer">Criar Conta</button>
+                        <button className="w-[200px] h-8 bg-purple text-white font-bold rounded-full cursor-pointer">Criar Conta</button>
                     </div>
                 </form>
             </div>

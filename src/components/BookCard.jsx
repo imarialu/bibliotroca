@@ -2,7 +2,7 @@ import { DetailsButton } from "./DetailsButton"
 
 export function BookCard({image, status, title, author, imgUser, nameUser}){
     return(
-        <div className="flex w-[350px] h-[180px] p-3 gap-2 border-1 rounded-md border-[var(--color-transparent-purple)] transition duration-500 ease hover:shadow-[0px_0px_5px_2px_rgba(198,_174,_230,_0.4)]">
+        <div className="flex w-[350px] h-[180px] p-3 gap-2 border rounded-md border-purple-tr transition duration-500 ease hover:shadow-cont">
             <div className="w-[120px] h-[155px]">
                 <img src={image} alt="Capa do livro" className="w-full h-full rounded-md"/>
             </div>
@@ -15,9 +15,9 @@ export function BookCard({image, status, title, author, imgUser, nameUser}){
                 <p className="text-sm">{author}</p>
 
                 <DetailsButton/>
-                <hr className="text-[var(--color-transparent-purple)]"/>
+                <hr className="text--purple-tr"/>
                 <div className="flex gap-2 items-center mt-2">
-                    <div className="rounded-full bg-[var(--color-gray)] w-[25px] h-[25px]">
+                    <div className="rounded-full bg-gray w-[25px] h-[25px]">
                         <img src={imgUser} alt="" />
                     </div>
                     
