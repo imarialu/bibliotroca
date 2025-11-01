@@ -9,6 +9,8 @@ export default function Login(){
                     <img src="#" alt="" />
                 </div>
 
+                <div className="h-screen w-[1px] bg-black"></div>
+
                 <div className="flex flex-col w-[50%] bg-white items-center justify-center">
                     <div className="space-y-2 mb-8">
                         <h1 className="text-4xl text-center font-bold text-purple">Login</h1>
@@ -17,9 +19,8 @@ export default function Login(){
                             <Link to="/cadastro" className="font-semibold text-purple">Cadastre-se</Link>
                         </p>
                     </div>
-
                     
-                    <form className="flex flex-col mb-5">
+                    <form className="flex flex-col mb-5 w-[400px]">
                         <Input label={"E-mail"} type={"email"} placeholder={""}></Input>
                         <Input label={"Senha"} type={"password"} placeholder={""}></Input>
                         <a href="#" className="underline text-purple">Esqueci minha senha</a>

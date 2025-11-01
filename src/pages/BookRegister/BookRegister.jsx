@@ -11,25 +11,26 @@ export default function BookRegister(){
                     <Heading text={"Cadastre um novo livro para troca"}/>
                 </header>
 
-                <section className="ml-20">
-                    <form className="flex flex-col items-center p-8 border rounded-sm border-none shadow-cont">
+                <section className="ml-20 w-[80%]">
+                    <form className="flex flex-col items-center p-8 rounded-sm shadow-cont">
                         <div className="flex">
-                            <div className=" flex flex-col justify-between mr-8">
-                                <img src="#" alt="" className="h-[85%] rounded-sm bg-gray-300"/>
+                            <div className="flex flex-col justify-between mr-10">
+                                <img src="#" alt="" className="h-[85%] rounded-sm bg-gray"/>
+
                                 <div className="rounded-full py-1 px-8 bg-purple-tr text-purple font-semibold cursor-pointer transition duration-400 ease hover:bg-purple-h">
-                                    <input type="file" id="foto" className="hidden"/>
-                                    <label htmlFor="foto">Selecionar imagem</label>
+                                    <input type="file" id="photo" className="hidden"/>
+                                    <label htmlFor="photo">Selecionar imagem</label>
                                 </div>
                             </div>
 
                             <div>
-                                <div className="flex gap-8">
-                                    <div className="">
+                                <div className="flex flex-col">
+                                    <div className="grid grid-cols-2 gap-10">
                                         <Input label={"Título"}/>
-                                        <Input label={"Quantidade de páginas"}/>
-                                    </div>
-                                    <div className="">
                                         <Input label={"Autor"}/>
+                                    </div>
+                                    <div className="grid grid-cols-2 gap-10">
+                                        <Input label={"Quantidade de páginas"}/>
                                         <div className="flex flex-col">
                                             <label htmlFor="category">Categoria</label>
                                             <select name="category" id="category" className="w-[300px] h-8 mt-2 pl-2 border border-gray rounded-sm focus:outline-none focus:border-purple">

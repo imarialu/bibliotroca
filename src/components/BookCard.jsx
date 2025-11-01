@@ -15,7 +15,7 @@ export function BookCard({image, status, title, author, imgUser, nameUser}){
                 <p className="text-sm">{author}</p>
 
                 <DetailsButton/>
-                <hr className="text--purple-tr"/>
+                <hr className="text-purple-tr"/>
                 <div className="flex gap-2 items-center mt-2">
                     <div className="rounded-full bg-gray w-[25px] h-[25px]">
                         <img src={imgUser} alt="" />
