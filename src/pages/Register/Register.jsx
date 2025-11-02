@@ -17,11 +17,14 @@ export default function Register(){
                     </p>
                 </div>
 
-                <form className="flex flex-col mb-5">
+                <form className="flex flex-col mb-5 w-[400px]">
                     <Input label={"Nome completo"} type={"text"} placeholder={""}></Input>
+                    <Input label={"Telefone"} placeholder={""}></Input>
                     <Input label={"E-mail"} type={"email"} placeholder={""}></Input>
-                    <Input label={"Senha"} type={"password"} placeholder={""}></Input>
-                    <Input label={"Confirmar senha"} type={"password"} placeholder={""}></Input>
+                    <div className="grid grid-cols-2 gap-4">
+                        <Input label={"Senha"} type={"password"} placeholder={""}></Input>
+                        <Input label={"Confirmar senha"} type={"password"} placeholder={""}></Input>
+                    </div>
 
                     <div className="flex justify-center mt-8">
                         <button className="w-[200px] h-8 bg-purple text-white font-bold rounded-full cursor-pointer">Criar Conta</button>
