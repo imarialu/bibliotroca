@@ -9,7 +9,7 @@ export default function Login(){
                     <img src="#" alt="" />
                 </div>
 
-                <div className="h-screen w-[1px] bg-black"></div>
+                {/* <div className="h-screen w-[1px] bg-black"></div> */}
 
                 <div className="flex flex-col w-[50%] bg-white items-center justify-center">
                     <div className="space-y-2 mb-8">

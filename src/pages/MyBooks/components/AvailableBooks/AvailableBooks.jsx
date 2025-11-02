@@ -7,7 +7,7 @@ import ExchangedButton from './ExchangedButton';
  export default function AvailableBooks({image, status, title, author}){
     return(
         <>
-            <div className="flex w-[350px] h-[180px] p-3 gap-2 border rounded-md border-purple-tr">
+            <div className="flex w-[350px] h-[180px] p-3 gap-2 bg-white border rounded-md border-purple-tr">
                 <div className="w-[120px] h-[155px]">
                     <img src={image} alt="Capa do livro" className="w-full h-full rounded-md"/>
                 </div>

@@ -12,8 +12,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/' element={<Register/>}/>
-          <Route path='/oi' element={<Home/>}/>
+          <Route path='/cadastro' element={<Register/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='/cadastro-de-livros' element={<BookRegister/>}/>
           <Route path='/meus-livros' element={<MyBooks/>}/>
           <Route path='/minha-conta' element={<MyAccount/>}/>

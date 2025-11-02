@@ -3,7 +3,7 @@ import FilledButton from "../../../components/FilledButton"
 
 export default function SecurityForm(){
     return(
-        <form className="p-8 rounded-md shadow-cont">
+        <form className="bg-white p-8 rounded-md shadow-cont">
             <h1 className="mb-5 text-xl font-bold text-purple">Alterar Senha</h1>
 
             <div>
