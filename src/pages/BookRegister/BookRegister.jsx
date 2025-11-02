@@ -12,7 +12,7 @@ export default function BookRegister(){
                 </header>
 
                 <section className="ml-20 w-[80%]">
-                    <form className="flex flex-col items-center p-8 rounded-sm shadow-cont">
+                    <form className="flex flex-col p-8 items-center rounded-sm shadow-cont w-[90%]">
                         <div className="flex">
                             <div className="flex flex-col justify-between mr-10">
                                 <img src="#" alt="" className="h-[85%] rounded-sm bg-gray"/>
@@ -23,7 +23,7 @@ export default function BookRegister(){
                                 </div>
                             </div>
 
-                            <div>
+                            <div className="">
                                 <div className="flex flex-col">
                                     <div className="grid grid-cols-2 gap-10">
                                         <Input label={"Título"}/>
