@@ -7,11 +7,11 @@ export default function BookRegister(){
     return(
         <>
             <MainLayout>
-                <header className="ml-20 w-[80%]">
+                <header className="ml-20 w-[1100px]">
                     <Heading text={"Cadastre um novo livro para troca"}/>
                 </header>
 
-                <section className="ml-20 w-[80%]">
+                <section className="ml-20 w-[1100px]">
                     <form className="flex flex-col p-8 items-center bg-white rounded-sm shadow-cont w-[90%]">
                         <div className="flex">
                             <div className="flex flex-col justify-between mr-10">

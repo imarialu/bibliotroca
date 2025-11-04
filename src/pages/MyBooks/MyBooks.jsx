@@ -15,7 +15,7 @@ export default function MyBooks(){
     return (
         <>
             <MainLayout>
-                <header className="ml-20 w-[80%]">
+                <header className="ml-20 w-[1100px]">
                     <Heading text={"Meus Livros"}/>
 
                     <div className="flex gap-5">
@@ -36,7 +36,7 @@ export default function MyBooks(){
                     <hr className="mt-4 text-purple"/>
                 </header>
 
-                <section className="ml-20 w-[80%]">
+                <section className="ml-20 w-[1100px]">
                     {activeContainer === "container-available" && <AvailableBooksSection/>}
                     {activeContainer === "container-exchanged" && <ExchangedBooksSection/>}
                 </section>
