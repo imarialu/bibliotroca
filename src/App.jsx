@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import BookRegister from './pages/BookRegister/BookRegister';
 import MyBooks from './pages/MyBooks/MyBooks';
 import MyAccount from './pages/MyAccount/MyAccount';
+import BookDetails from './pages/BookDetails/BookDetails';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/cadastro-de-livros' element={<BookRegister/>}/>
           <Route path='/meus-livros' element={<MyBooks/>}/>
           <Route path='/minha-conta' element={<MyAccount/>}/>
+          <Route path='/detalhes' element={<BookDetails/>}/>
         </Routes>
       </Router>
     </>
