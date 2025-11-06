@@ -15,13 +15,13 @@ export default function MyAccount(){
     return(
         <>
             <MainLayout>
-                <header className="ml-20 w-[1100px]">
+                <header className="mt-10 md:mt-0 md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
                     <Heading text={"Minha Conta"}/>
                 </header>
                 
-                <section className="ml-20 w-[1100px]">
-                    <div className="grid grid-cols-4">
-                        <div className="flex flex-col w-[200px] h-[83px] border border-purple-tr rounded-sm">
+                <section className="md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
+                    <div className="flex flex-col xl:grid grid-cols-4">
+                        <div className="mb-10 flex flex-col w-[200px] h-[83px] border border-purple-tr rounded-sm md:mr-10">
                             <Button
                                 isActive={activeForm === "profile-form"}
                                 onClick={() => setActiveForm("profile-form")}

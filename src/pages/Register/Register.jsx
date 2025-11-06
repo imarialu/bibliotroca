@@ -3,12 +3,12 @@ import { Input } from "../../components/Input";
 
 export default function Register(){
     return(
-        <main className="flex flex-row w-full h-screen">
-            <div className="w-[50%]">
+        <main className="flex md:flex-row w-full h-screen">
+            <div className="hidden md:block w-[50%]">
                 <img src="#" alt="" />
             </div>
 
-            <div className="flex flex-col w-[50%] bg-white items-center justify-center">
+            <div className="flex flex-col w-full md:w-[50%] bg-white items-center justify-center">
                 <div className="space-y-2 mb-8">
                     <h1 className="text-4xl text-center font-bold text-purple">Cadastro</h1>
                     <p className="text-lg">

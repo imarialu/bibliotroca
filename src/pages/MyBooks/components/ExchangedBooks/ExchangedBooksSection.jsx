@@ -4,7 +4,7 @@ import ExchangedBooks from "./ExchangedBooks"
 export default function ExchangedBooksSection(){
     return(
         <>
-            <div className="grid grid-cols-5 gap-y-5 gap-x-5 my-10">
+            <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-3 xl:grid-cols-5">
                 {/* Dados usados apenas para desenvolvimento */}
                 {books.map((book) => {
                     return <ExchangedBooks
