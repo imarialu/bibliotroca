@@ -4,14 +4,12 @@ import { Input } from "../../components/Input";
 export default function Login(){
     return(
         <>
-            <main className="flex md:flex-row w-full h-screen">
-                <div className="hidden md:block w-[50%]">
-                    <img src="#" alt="" />
+            <main className="flex md:flex-row w-full h-screen bg-purple">
+                <div className="hidden bg-purple md:block md:w-[50%] md:flex md:items-center md:justify-center">
+                    <img src="./imgs/bg.png" alt="Três leitores encostados em uma pilha de livros" className="w-[600px]"/>
                 </div>
 
-                {/* <div className="h-screen w-[1px] bg-black"></div> */}
-
-                <div className="flex flex-col w-full md:w-[50%] bg-white items-center justify-center">
+                <div className="flex flex-col w-full md:w-[50%] bg-white items-center justify-center md:rounded-l-2xl">
                     <div className="space-y-2 mb-8">
                         <h1 className="text-4xl text-center font-bold text-purple">Login</h1>
                         <p className="text-lg">
@@ -20,9 +18,9 @@ export default function Login(){
                         </p>
                     </div>
                     
-                    <form className="flex flex-col mb-5 w-[400px]">
-                        <Input label={"E-mail"} type={"email"} placeholder={""}></Input>
-                        <Input label={"Senha"} type={"password"} placeholder={""}></Input>
+                    <form className="flex flex-col mb-5 w-[350px] lg:w-[400px]">
+                        <Input label={"E-mail"} type={"email"} placeholder={"seuemail@email.com"}></Input>
+                        <Input label={"Senha"} type={"password"} placeholder={"Sua senha"}></Input>
                         <a href="#" className="underline text-purple">Esqueci minha senha</a>
                         {/* <Link to="" className="underline text-purple">Esqueci minha senha</Link> */}
                         <div className="flex justify-center mt-10">
