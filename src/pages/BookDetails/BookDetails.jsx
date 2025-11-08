@@ -15,7 +15,7 @@ export default function BookDetails(){
                 <div className="w-[60%] mt-10 md:mt-0 md:ml-20 md:w-[720px] xl:w-[1100px]">   
                     <button 
                     onClick={() => navigate(-1)} 
-                    className="flex mt-10 mb-8 gap-1 py-1 px-3 border border-purple-tr rounded-md text-purple transition duration-400 ease hover:border-purple">
+                    className="flex mt-10 mb-8 gap-1 py-1 px-3 border border-purple-tr rounded-md text-purple transition duration-400 ease hover:border-purple md:mt-8">
                         <BsArrowLeftShort className="text-2xl"/>
                         Voltar
                     </button>
