@@ -19,8 +19,8 @@ export default function Login(){
                     </div>
                     
                     <form className="flex flex-col mb-5 w-[350px] lg:w-[400px]">
-                        <Input label={"E-mail"} type={"email"} placeholder={"seuemail@email.com"}></Input>
-                        <Input label={"Senha"} type={"password"} placeholder={"Sua senha"}></Input>
+                        <Input label={"E-mail"} type={"email"}></Input>
+                        <Input label={"Senha"} type={"password"}></Input>
                         <a href="#" className="underline text-purple">Esqueci minha senha</a>
                         {/* <Link to="" className="underline text-purple">Esqueci minha senha</Link> */}
                         <div className="flex justify-center mt-10">

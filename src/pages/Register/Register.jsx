@@ -18,17 +18,17 @@ export default function Register(){
                 </div>
 
                 <form className="flex flex-col mb-5 w-[350px] lg:w-[400px]">
-                    <Input label={"Nome completo"} type={"text"} placeholder={"Informe seu nome completo"}></Input>
-                    <Input label={"Telefone"} placeholder={"(00) 00000-0000"}></Input>
-                    <Input label={"Endereço"} placeholder={"Informe seu endereço"}></Input>
+                    <Input label={"Nome completo"} type={"text"}></Input>
+                    <Input label={"Telefone"}></Input>
+                    <Input label={"Endereço"}></Input>
                     <div className="grid grid-cols-2 gap-4">
-                        <Input label={"Estado"} type={"text"} placeholder={""}></Input>
-                        <Input label={"Cidade"} type={"text"} placeholder={"Informe sua cidade"}></Input>
+                        <Input label={"Estado"} type={"text"}></Input>
+                        <Input label={"Cidade"} type={"text"}></Input>
                     </div>
-                    <Input label={"E-mail"} type={"email"} placeholder={"seuemail@email.com"}></Input>
+                    <Input label={"E-mail"} type={"email"}></Input>
                     <div className="grid grid-cols-2 gap-4">
-                        <Input label={"Senha"} type={"password"} placeholder={"Crie uma senha"}></Input>
-                        <Input label={"Confirmar senha"} type={"password"} placeholder={"Confirme sua senha"}></Input>
+                        <Input label={"Senha"} type={"password"}></Input>
+                        <Input label={"Confirmar senha"} type={"password"}></Input>
                     </div>
 
                     <div className="flex justify-center mt-4">
