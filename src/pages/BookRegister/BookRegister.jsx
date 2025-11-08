@@ -54,8 +54,8 @@ export default function BookRegister(){
                                             Novo
                                         </label>
                                         
-                                        <label htmlFor="almostNew" className="flex gap-2">
-                                            <input type="radio" name="statusBook" id="almostNew" />
+                                        <label htmlFor="likeNew" className="flex gap-2">
+                                            <input type="radio" name="statusBook" id="likeNew" />
                                             Seminovo
                                         </label>
 

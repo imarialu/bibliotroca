@@ -28,7 +28,7 @@ export default function Home(){
                                 return <BookCard
                                     key={book.id}
                                     image={book.image}
-                                    status={book.status}
+                                    condition={book.condition}
                                     title={book.title}
                                     author={book.author}
                                 />

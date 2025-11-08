@@ -1,6 +1,7 @@
+import BookCondition from "./BookCondition"
 import { DetailsButton } from "./DetailsButton"
 
-export function BookCard({image, status, title, author, imgUser, nameUser}){
+export function BookCard({image, condition, title, author, imgUser, nameUser}){
     return(
         <div className="flex w-[350px] h-[180px] p-3 gap-2 bg-white border rounded-md border-purple-tr transition duration-500 ease hover:shadow-cont">
             <div className="w-[120px] h-[155px]">
@@ -9,7 +10,7 @@ export function BookCard({image, status, title, author, imgUser, nameUser}){
 
             <div className="flex flex-col justify-between w-[250px]">
                 <div>
-                    <p className="text-sm font-semibold">{status}</p>
+                    <BookCondition text={condition}/>
                     <h2 className="text-base font-medium">
                         {title.length > 26 ? `${title.substring(0, 25)}...` : title}
                     </h2>
