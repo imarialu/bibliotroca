@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
 @import "tailwindcss";
 
 body{
     color: var(--color-primary-text);
     background-color: var(--color-primary-bg);
+    font-family: var(--font-noto);
 }
 
 @theme{
@@ -21,4 +24,8 @@ body{
 
     /* Sombras */
     --shadow-cont: 0 0 5px 2px rgba(198, 174, 230, 0.4);
+
+    /* Fontes */
+    --font-noto: "Noto Sans", sans-serif;
+    --font-outfit: "Outfit", sans-serif;
 }

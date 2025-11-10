@@ -8,7 +8,7 @@ export default function ExchangedBooks({image, title, author}){
             <div className="w-[150px] mt-4">
                 <hr className="text-purple"/>
                 <h2 className="mt-2 text-lg font-medium">
-                    {title.length > 15 ? `${title.substring(0, 14)}...` : title}
+                    {title.length > 14 ? `${title.substring(0, 13)}...` : title}
                 </h2>
                 <p className="text-sm mb-6">
                     {author}

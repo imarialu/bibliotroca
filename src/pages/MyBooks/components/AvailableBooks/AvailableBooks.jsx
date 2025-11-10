@@ -15,8 +15,8 @@ import ExchangedButton from './ExchangedButton';
                 <div className="flex flex-col justify-between w-[250px]">
                     <div>
                         <p className="text-sm font-semibold">{status}</p>
-                        <h2 className="text-base font-medium">
-                            {title.length > 26 ? `${title.substring(0, 25)}...` : title}
+                        <h2 className="font-medium">
+                            {title.length > 24 ? `${title.substring(0, 23)}...` : title}
                         </h2>
                         <p className="text-sm">{author}</p>
                     </div>

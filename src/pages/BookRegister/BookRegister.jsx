@@ -8,7 +8,7 @@ export default function BookRegister(){
         <>
             <MainLayout>
                 <header className="mt-10 md:mt-0 md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
-                    <Heading text={"Cadastre um novo livro para troca"}/>
+                    <Heading text={"Cadastrdo de livro"}/>
                 </header>
 
                 <section className="md:ml-20 mb-10 w-[80%] md:w-[720px] xl:w-[1100px]">
@@ -34,8 +34,8 @@ export default function BookRegister(){
                                     <div className="grid grid-cols-2 gap-4">
                                         <Input label={"Nº de páginas"}/>
                                         <div className="flex flex-col">
-                                            <label htmlFor="category">Categoria</label>
-                                            <select name="category" id="category" className="w-[160px] h-8 mt-2 pl-2 border border-gray rounded-sm focus:outline-none focus:border-purple md:w-[190px] xl:w-[330px]">
+                                            <label htmlFor="category" className="text-lg font-medium">Categoria</label>
+                                            <select name="category" id="category" className="w-[160px] h-8 mt-1 pl-2 border border-gray rounded-sm focus:outline-none focus:border-purple md:w-[190px] xl:w-[330px]">
                                                 <option value="">Selecione a categoria</option>
                                                 <option value="romance">Romance</option>
                                                 <option value="drama">Drama</option>
@@ -47,7 +47,7 @@ export default function BookRegister(){
                                 </div>
 
                                 <div className="mb-1">
-                                    <label htmlFor="status" className="text-lg mb-1">Estado do livro</label>
+                                    <label htmlFor="status" className="text-lg font-medium mb-1">Estado do livro</label>
                                     <div className="flex gap-4 mb-2">
                                         <label htmlFor="newBook" className="flex gap-2">
                                             <input type="radio" name="statusBook" id="newBook"/>
@@ -66,7 +66,7 @@ export default function BookRegister(){
                                     </div>
 
                                     <div className="flex flex-col">
-                                        <label htmlFor="description" className="text-lg mb-1">Descrição sobre o livro</label>
+                                        <label htmlFor="description" className="text-lg font-medium mb-1">Descrição sobre o livro</label>
                                         <textarea name="description" id="description" rows="5" className="resize-none p-2 border border-gray rounded-sm focus:outline-none focus:border-purple"></textarea>
                                     </div>
                                 </div>

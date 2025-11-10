@@ -14,13 +14,13 @@ export default function Home(){
                     </section>
 
                     <section className="flex justify-center m-5">
-                        <input type="text" placeholder="Busque o livro que procura" className="w-[300px] text-md pl-5 py-2 mb-5 border border-gray rounded-full focus:outline-none focus:border-purple md:w-[500px] md:text-lg md:py-2"/>
+                        <input type="text" placeholder="Busque o livro que procura" className="w-[300px] text-md pl-5 py-1 mb-5 border border-gray rounded-full placeholder:text-sm focus:outline-none focus:border-purple md:w-[500px]"/>
                         <button></button>
                     </section>
 
                     <section className="flex flex-col gap-5 items-center">
                         <div className="justify-start max-w-[1100px] mb-5 md:w-[720px] xl:w-[1100px]">
-                            <h1 className="text-2xl text-purple font-semibold">Livros disponíveis</h1>
+                            <h1 className="text-3xl text-purple font-outfit font-semibold">Livros disponíveis</h1>
                         </div>
 
                         <div className="grid grid-cols-1 gap-6 mb-10 md:grid-cols-2 xl:grid-cols-3">

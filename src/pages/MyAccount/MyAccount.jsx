@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { FaRegUser } from 'react-icons/fa6';
+import { HiOutlineUser } from "react-icons/hi";
 import { LuKeyRound } from 'react-icons/lu';
 
 import MainLayout from "../../layouts/MainLayout";
@@ -25,7 +25,7 @@ export default function MyAccount(){
                             <Button
                                 isActive={activeForm === "profile-form"}
                                 onClick={() => setActiveForm("profile-form")}
-                                icon={<FaRegUser className="text-lg"/>} 
+                                icon={<HiOutlineUser className="text-xl"/>} 
                                 text={"Meu Perfil"}>
                             </Button>
 
