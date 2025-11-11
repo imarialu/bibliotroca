@@ -17,7 +17,7 @@ export default function MyProfileForm(){
             <hr className="mt-5 text-purple"/>
 
             <div className="mt-5">
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
                     <Input label={"Nome completo"}/>
                     <Input label={"Telefone"}/>
                 </div>
