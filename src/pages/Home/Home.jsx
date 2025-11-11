@@ -8,7 +8,7 @@ export default function Home(){
     return( 
         <>
             <MainLayout>
-                <section className="mt-10 md:mt-0 md:ml-20">
+                <section className="mt-12 md:mt-0 md:ml-20">
                     <section className="flex justify-center">
                         <div className="max-w-[1100px] w-[350px] h-[220px] my-10 rounded-2xl bg-gray md:w-[720px] xl:w-[1100px]"></div>
                     </section>

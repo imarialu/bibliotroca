@@ -15,7 +15,7 @@ export default function MyAccount(){
     return(
         <>
             <MainLayout>
-                <header className="mt-10 md:mt-0 md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
+                <header className="mt-12 md:mt-0 md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
                     <Heading text={"Minha Conta"}/>
                 </header>
                 
