@@ -12,13 +12,13 @@ export default function Home(){
             <MainLayout>
                 <section className="mt-12 md:mt-0 md:ml-20">
                     <section className="flex justify-center">
-                        <div className="max-w-[1100px] w-[350px] h-[220px] my-10 rounded-2xl bg-gray md:w-[720px] xl:w-[1100px]"></div>
+                        <div className="w-[450px] h-[220px] my-10 rounded-2xl bg-gray md:w-[720px] xl:w-[1100px]"></div>
                     </section>
 
                     <section className="flex justify-center w-full">
                         <div className="flex items-center bg-white gap-2 mt-5 mb-10 w-[300px] text-md pl-5 py-1 border border-purple-tr rounded-full md:w-[500px]">
                             <IoMdSearch className="text-xl text-purple"/>
-                            <input type="text" placeholder="Busque pelo livro que deseja" className="w-[200px] md:w-[400px] focus:outline-none"/>
+                            <input type="text" placeholder="Pesquisar" className="w-[200px] md:w-[400px] focus:outline-none"/>
                         </div>
                     </section>
 

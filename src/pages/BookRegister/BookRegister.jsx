@@ -4,6 +4,17 @@ import { Input } from "../../components/Input";
 import FilledButton from "../../components/FilledButton";
 
 export default function BookRegister(){
+    const genres = [
+        "Romance", 
+        "Fantasia", 
+        "Suspense/Misterio", 
+        "Terror", 
+        "Ficção Científica", 
+        "Aventura", 
+        "Drama", 
+        "Biografia/Autobiografia",
+    ];
+
     return(
         <>
             <MainLayout>
@@ -34,13 +45,18 @@ export default function BookRegister(){
                                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
                                         <Input label={"Nº de páginas"}/>
                                         <div className="flex flex-col">
-                                            <label htmlFor="category" className="text-lg">Gênero</label>
-                                            <select name="category" id="category" className="w-[325px] h-8 mt-1 mb-3 pl-2 border border-gray rounded-sm focus:outline-none focus:border-purple md:w-[190px] xl:w-[340px]">
-                                                <option value="">Selecione o gênero</option>
-                                                <option value="romance">Romance</option>
-                                                <option value="drama">Drama</option>
-                                                <option value="terror">Terror</option>
-                                                <option value="suspense">Suspense</option>
+                                            <label htmlFor="genre" className="text-lg">Gênero</label>
+                                            <select 
+                                                required
+                                                name="genre" 
+                                                id="genre" 
+                                                className="w-[325px] h-8 mt-1 mb-3 pl-2 border border-gray rounded-sm focus:outline-none focus:border-purple md:w-[190px] xl:w-[340px]">
+                                                    <option value="">Selecione o gênero</option>
+                                                    {genres.map(genre => (
+                                                        <option key={genre} value={genre}>
+                                                            {genre}
+                                                        </option>
+                                                    ))}
                                             </select>
                                         </div>
                                     </div>
