@@ -11,8 +11,8 @@ export default function BookRegister(){
                     <Heading text={"Cadastrdo de livro"}/>
                 </header>
 
-                <section className="md:ml-20 mb-5 w-[80%] md:w-[720px] xl:w-[1100px]">
-                    <form className="flex flex-col p-8 bg-white rounded-sm shadow-cont">
+                <section className="md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
+                    <form className="flex flex-col p-8 mb-5 bg-white rounded-sm shadow-cont">
                         <div className="flex flex-col md:flex-row xl:grid grid-cols-3">
                             <div className="flex flex-col justify-between mb-10 md:mb-0 md:mr-8 xl:col-span-1 items-center">
                                 <div className="w-[220px] h-[280px] mb-5 md:mb-0 md:w-[230px] md:h-[85%] rounded-sm bg-gray">

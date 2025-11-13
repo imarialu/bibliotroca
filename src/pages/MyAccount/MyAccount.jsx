@@ -39,7 +39,7 @@ export default function MyAccount(){
                             </Button>
                         </div>
 
-                        <section className="col-span-3 mb-10">
+                        <section className="col-span-3 mb-5">
                             {activeForm === "profile-form" && <MyProfileForm/>}
                             {activeForm === "security-form" && <SecurityForm/>}
                         </section>

@@ -1,10 +1,16 @@
+import { useState } from 'react';
+
 import { MdOutlineModeEdit } from 'react-icons/md'; 
 import { MdOutlineDelete } from 'react-icons/md';
 
-
 import ExchangedButton from './ExchangedButton';
+import Modal from '../../../../components/Modal';
+import FilledButton from '../../../../components/FilledButton';
  
  export default function AvailableBooks({image, status, title, author}){
+    const [confirmModal, setconfirmModal] = useState(false);
+    const [deleteModal, setDeteleModal] = useState(false);
+
     return(
         <>
             <div className="flex w-[350px] h-[180px] p-3 gap-2 bg-white border rounded-md border-purple-tr">
@@ -28,13 +34,34 @@ import ExchangedButton from './ExchangedButton';
                                 <button className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
                                     <MdOutlineModeEdit className="text-2xl"/>
                                 </button>
-                                <button className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
-                                    <MdOutlineDelete className="text-2xl"/>
+                                <button 
+                                    onClick={() => setDeteleModal(true)}
+                                    className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
+                                        <MdOutlineDelete className="text-2xl"/>
                                 </button>
+
+                                {/* Modal de confirmação de exclusão de livro */}
+                                <Modal isOpen={deleteModal} onClose={() => setDeteleModal(false)}>
+                                    <p className="mt-2 font-medium">Tem certeza que deseja deletar este livro? <br/> Essa ação é irreversível.</p>
+
+                                    <div className="flex gap-4">
+                                        <button 
+                                            className="py-1 px-6 rounded-full bg-red text-white font-semibold cursor-pointer">
+                                                Deletar
+                                        </button>
+                                    </div>
+                                </Modal>
                             </div>
 
                             <div>
-                                <ExchangedButton text={"Trocado"}/>
+                                <ExchangedButton onClick={() => setconfirmModal(true)} text={"Trocado"}/>
+
+                                {/* Modal de confirmação para marcar o livro como trocado */}
+                                <Modal isOpen={confirmModal} onClose={() => setconfirmModal(false)}>
+                                    <h1 className="font-medium">Ficamos felizes por ter conseguido trocar seu livro!</h1>
+
+                                    <FilledButton text={"Marcar como trocado"}/>
+                                </Modal>
                             </div>
                         </div>
                     </div>

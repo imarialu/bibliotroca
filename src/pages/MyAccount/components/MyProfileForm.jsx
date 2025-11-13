@@ -25,12 +25,7 @@ export default function MyProfileForm(){
                 <div className="grid grid-cols-1">
                     <Input label={"Endereço"}/>
                 </div>
-
-                <div className="grid grid-cols-2 gap-6">
-                    <Input label={"Número"}/>
-                    <Input label={"CEP"}/>
-                </div>
-
+                
                 <div className="grid grid-cols-2 gap-6">
                     <Input label={"Estado"}/>
                     <Input label={"Cidade"}/>

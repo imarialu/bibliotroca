@@ -21,6 +21,7 @@ body{
     --color-green: #67B161;
     --color-blue: #6189cb;
     --color-orange: #B19261;
+    --color-red: #C74F3A;
 
     /* Sombras */
     --shadow-cont: 0 0 5px 2px rgba(198, 174, 230, 0.4);

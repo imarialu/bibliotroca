@@ -1,12 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import { BsArrowLeftShort } from 'react-icons/bs';
 
 import books from "../../data/books";
 import MainLayout from "../../layouts/MainLayout";
 import FilledButton from "../../components/FilledButton";
+import Modal from "../../components/Modal";
 
 export default function BookDetails(){
+    const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate()
 
     return(
@@ -66,10 +69,31 @@ export default function BookDetails(){
                         </div>
 
                         <div className="flex mt-10 justify-center">
-                            <FilledButton text={"Tenho interesse"}></FilledButton>
+                            <FilledButton text={"Tenho interesse"} onClick={() => setShowModal(true)}></FilledButton>
                         </div>
+
+                        <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+                            <h1 className="text-xl text-purple font-bold">
+                                Conheça novas histórias!
+                            </h1>
+
+                            <div className="flex items-center justify-center bg-purple-tr rounded-full size-[160px]">
+                                <img src="./imgs/modal-img.png" alt="Garota com um livro na mão" className="size-[150px] rounded-full"/>
+                            </div>
+
+                            <p className="w-[90%] text-center font-semibold sm:w-[75%]">
+                                Vá em busca do livro que tanto deseja! <br/>
+                                Entre em contato com o dono do mesmo e o ofereça outro em troca para negociação. 
+                            </p>
+                            <p className="w-[85%] text-sm text-center font-medium sm:w-[80%]">
+                                <span className="font-semibold text-purple">Obs:</span> Livros do acervo Bibliotroca podem ser trocados por qualquer outro livro que você desejar oferecer. 
+                            </p>
+
+                            <div className="mt-2">
+                                <FilledButton text={"Entrar em contato"}></FilledButton>
+                            </div>
+                        </Modal>
                     </div>
-                    
                 </section>
             </MainLayout>
         </>
