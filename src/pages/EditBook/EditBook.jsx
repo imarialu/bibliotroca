@@ -1,27 +1,41 @@
+import { Navigate, useNavigate } from "react-router-dom";
+
 import MainLayout from "../../layouts/MainLayout";
 import Heading from "../../components/Heading";
 import { Input } from "../../components/Input";
 import FilledButton from "../../components/FilledButton";
 
-export default function BookRegister(){
+import { BsArrowLeftShort } from 'react-icons/bs';
+
+export default function EditBook(){
+    const navigate = useNavigate();
+
     return(
         <>
             <MainLayout>
                 <header className="mt-12 md:mt-0 md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
-                    <Heading text={"Cadastrdo de livro"}/>
+                    <div className="w-[60%] md:w-[720px] xl:w-[1100px]">   
+                        <button 
+                            onClick={() => navigate(-1)} 
+                            className="flex mt-10 mb-8 gap-1 py-1 px-3 border border-purple-tr rounded-md text-purple transition duration-400 ease hover:border-purple md:mt-8">
+                                <BsArrowLeftShort className="text-2xl"/>
+                                Voltar
+                        </button>
+                    </div>
+                    <Heading text={"Editar livro"}/>
                 </header>
 
                 <section className="md:ml-20 w-[80%] md:w-[720px] xl:w-[1100px]">
-                    <form className="flex flex-col p-8 mb-10 bg-white rounded-sm shadow-cont sm:mb-0">
+                    <form className="flex flex-col p-8 mb-8 bg-white rounded-sm shadow-cont">
                         <div className="flex flex-col md:flex-row xl:grid grid-cols-3">
                             <div className="flex flex-col justify-between mb-10 md:mb-0 md:mr-8 xl:col-span-1 items-center">
                                 <div className="w-[220px] h-[280px] mb-5 md:mb-0 md:w-[230px] md:h-[85%] rounded-sm bg-gray">
-                                    {/* <img src="#" alt="" className="w-full h-full"/> */}
+                                    
                                 </div>
 
                                 <div className="flex w-[230px] md:w-[230px] rounded-full justify-center items-center py-1 px-10 bg-purple-tr text-purple font-semibold cursor-pointer transition duration-400 ease hover:bg-purple-h">
                                     <input type="file" id="photo" className="hidden"/>
-                                    <label htmlFor="photo" className="">Selecionar imagem</label>
+                                    <label htmlFor="photo" className="">Alterar imagem</label>
                                 </div>
                             </div>
 
@@ -74,7 +88,7 @@ export default function BookRegister(){
                         </div>
 
                         <div className="flex justify-center mt-8">
-                            <FilledButton text={"Cadastrar livro"}/>
+                            <FilledButton text={"Salvar alterações"}/>
                         </div>
                     </form>
                 </section>

@@ -6,6 +6,7 @@ import BookRegister from './pages/BookRegister/BookRegister';
 import MyBooks from './pages/MyBooks/MyBooks';
 import MyAccount from './pages/MyAccount/MyAccount';
 import BookDetails from './pages/BookDetails/BookDetails';
+import EditBook from './pages/EditBook/EditBook';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/meus-livros' element={<MyBooks/>}/>
           <Route path='/minha-conta' element={<MyAccount/>}/>
           <Route path='/detalhes' element={<BookDetails/>}/>
+          <Route path='/editar-livro' element={<EditBook/>}/>
         </Routes>
       </Router>
     </>

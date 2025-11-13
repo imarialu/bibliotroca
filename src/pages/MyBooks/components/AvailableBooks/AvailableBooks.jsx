@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 import { MdOutlineModeEdit } from 'react-icons/md'; 
 import { MdOutlineDelete } from 'react-icons/md';
@@ -10,6 +11,8 @@ import FilledButton from '../../../../components/FilledButton';
  export default function AvailableBooks({image, status, title, author}){
     const [confirmModal, setconfirmModal] = useState(false);
     const [deleteModal, setDeteleModal] = useState(false);
+
+    const navigate = useNavigate();
 
     return(
         <>
@@ -31,9 +34,14 @@ import FilledButton from '../../../../components/FilledButton';
                         <hr className="text-purple-tr mb-2"/>
                         <div className="flex justify-between items-center">
                             <div className="flex gap-2">
-                                <button className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
-                                    <MdOutlineModeEdit className="text-2xl"/>
+                                {/* Botão de editar livro */}
+                                <button 
+                                    onClick={() => navigate(`/editar-livro`)}
+                                    className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
+                                        <MdOutlineModeEdit className="text-2xl"/>
                                 </button>
+
+                                {/* Botão de deletar livro */}
                                 <button 
                                     onClick={() => setDeteleModal(true)}
                                     className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">

@@ -33,7 +33,7 @@ export default function MyProfileForm(){
             </div>
 
             <div className="flex justify-center mt-5">
-                <FilledButton text={"Salvar"}/>
+                <FilledButton text={"Salvar alterações"}/>
             </div>
         </form>
     )
