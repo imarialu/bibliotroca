@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import books from '../../data/books'
+import books from '../../data/books';
 import MainLayout from "../../layouts/MainLayout";
-import { BookCard } from '../../components/BookCard'
+import { BookCard } from '../../components/BookCard';
+
+import { IoMdSearch } from "react-icons/io";
 
 export default function Home(){
     return( 
@@ -13,9 +15,11 @@ export default function Home(){
                         <div className="max-w-[1100px] w-[350px] h-[220px] my-10 rounded-2xl bg-gray md:w-[720px] xl:w-[1100px]"></div>
                     </section>
 
-                    <section className="flex justify-center m-5">
-                        <input type="text" placeholder="Busque o livro que procura" className="w-[300px] text-md pl-5 py-1 mb-5 border border-gray rounded-full placeholder:text-sm focus:outline-none focus:border-purple md:w-[500px]"/>
-                        <button></button>
+                    <section className="flex justify-center w-full">
+                        <div className="flex items-center bg-white gap-2 mt-5 mb-10 w-[300px] text-md pl-5 py-1 border border-purple-tr rounded-full md:w-[500px]">
+                            <IoMdSearch className="text-xl text-purple"/>
+                            <input type="text" placeholder="Busque pelo livro que deseja" className="w-[200px] md:w-[400px] focus:outline-none"/>
+                        </div>
                     </section>
 
                     <section className="flex flex-col gap-5 items-center">
