@@ -131,7 +131,7 @@ export default function BookRegister(){
                                                 name="categoria" 
                                                 id="genre" 
                                                 onChange={handleChange}
-                                                className="w-[325px] h-8 mt-1 mb-3 pl-2 border border-gray rounded-sm focus:outline-none focus:border-purple md:w-[190px] xl:w-[340px]">
+                                                className="w-[325px] h-8 mt-1 mb-3 pl-2 border border-gray rounded-sm shadow-xs focus:outline-none focus:border-purple md:w-[190px] xl:w-[340px]">
                                                     <option value="">Selecione o gênero</option>
                                                     {genres.map(genre => (
                                                         <option key={genre.uuid} value={genre.uuid}>
@@ -186,7 +186,7 @@ export default function BookRegister(){
                                             name="descricao" 
                                             id="description" 
                                             rows="5" 
-                                            className="resize-none p-2 border border-gray rounded-sm focus:outline-none focus:border-purple" 
+                                            className="resize-none p-2 border border-gray rounded-sm shadow-xs focus:outline-none focus:border-purple" 
                                             onChange={handleChange}></textarea>
                                     </div>
                                 </div>
