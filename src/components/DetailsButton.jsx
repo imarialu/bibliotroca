@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-export function DetailsButton(){
+export function DetailsButton({uuid}){
     return(
         <Link
-            to={'/detalhes'}
+            to={`/detalhes/${uuid}`}
             className="mt-4 mb-2 px-6 py-[0.2rem] rounded-full bg-purple-tr text-sm text-purple font-semibold cursor-pointer transition duration-400 ease hover:bg-purple-h">
                 Detalhes
         </Link>

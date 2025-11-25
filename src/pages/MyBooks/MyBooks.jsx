@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import { PiBooks } from 'react-icons/pi';
-import { HiOutlineRefresh } from 'react-icons/hi';
-
 import MainLayout from "../../layouts/MainLayout";
 import Heading from "../../components/Heading";
 import GhostButton from "./components/GhostButton";
 import AvailableBooksSection from "./components/AvailableBooks/AvailableBooksSection";
 import ExchangedBooksSection from "./components/ExchangedBooks/ExchangedBooksSection";
+
+import { PiBooks } from 'react-icons/pi';
+import { HiOutlineRefresh } from 'react-icons/hi';
 
 export default function MyBooks(){
     const [activeContainer, setActiveContainer] = useState("container-available");

@@ -1,24 +1,37 @@
 import { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-import { MdOutlineModeEdit } from 'react-icons/md'; 
-import { MdOutlineDelete } from 'react-icons/md';
+import url from "../../../../services/url";
+import { deleteBook, bookExchange } from '../../../../services/bookService';
 
 import ExchangedButton from './ExchangedButton';
 import Modal from '../../../../components/Modal';
 import FilledButton from '../../../../components/FilledButton';
- 
- export default function AvailableBooks({image, status, title, author}){
+
+import { MdOutlineModeEdit } from 'react-icons/md'; 
+import { MdOutlineDelete } from 'react-icons/md';
+
+export default function AvailableBooks({image, status, title, author, uuid, onUpdate}){
     const [confirmModal, setconfirmModal] = useState(false);
     const [deleteModal, setDeteleModal] = useState(false);
 
     const navigate = useNavigate();
 
+    const bookDelete = async () => {
+        await deleteBook(uuid);
+        onUpdate()
+    };
+
+    const exchangeBook = async () => {
+        await bookExchange(uuid);
+        onUpdate()
+    };
+    
     return(
         <>
             <div className="flex w-[350px] h-[180px] p-3 gap-2 bg-white border rounded-md border-purple-tr">
                 <div className="w-[120px] h-[155px]">
-                    <img src={image} alt="Capa do livro" className="w-full h-full rounded-md"/>
+                    <img src={url + "/img/" + image} alt="Capa do livro" className="w-full h-full rounded-md"/>
                 </div>
 
                 <div className="flex flex-col justify-between w-[250px]">
@@ -36,7 +49,7 @@ import FilledButton from '../../../../components/FilledButton';
                             <div className="flex gap-2">
                                 {/* Botão de editar livro */}
                                 <button 
-                                    onClick={() => navigate(`/editar-livro`)}
+                                    onClick={() => navigate(`/editar-livro/${uuid}`)}
                                     className="flex items-center p-1 border border-purple rounded-full text-purple transition duration-400 ease hover:bg-purple-tr cursor-pointer">
                                         <MdOutlineModeEdit className="text-2xl"/>
                                 </button>
@@ -54,7 +67,8 @@ import FilledButton from '../../../../components/FilledButton';
 
                                     <div className="flex gap-4">
                                         <button 
-                                            className="py-1 px-6 rounded-full bg-red text-white font-semibold cursor-pointer">
+                                            className="py-1 px-6 rounded-full bg-red text-white font-semibold cursor-pointer"
+                                            onClick={bookDelete}>
                                                 Deletar
                                         </button>
                                     </div>
@@ -68,7 +82,7 @@ import FilledButton from '../../../../components/FilledButton';
                                 <Modal isOpen={confirmModal} onClose={() => setconfirmModal(false)}>
                                     <h1 className="font-medium">Ficamos felizes por ter conseguido trocar seu livro!</h1>
 
-                                    <FilledButton text={"Marcar como trocado"}/>
+                                    <FilledButton type="submit" text={"Marcar como trocado"} onClick={exchangeBook} />
                                 </Modal>
                             </div>
                         </div>

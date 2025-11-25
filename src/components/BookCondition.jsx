@@ -1,15 +1,17 @@
 export default function BookCondition({text}){
     const colorsCondition = {
-        Novo: "text-green",
-        Seminovo: "text-blue",
-        Antigo: "text-orange"
+        novo: "text-green",
+        seminovo: "text-blue",
+        antigo: "text-orange"
     };
 
     const color = colorsCondition[text];
 
+    const upperText = text[0].toUpperCase() + text.substring(1);
+
     return(
         <p className="text-sm font-semibold">
-            <span className={color}>{text}</span>
+            <span className={color}>{upperText}</span>
         </p>
     )
 }

@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import { HiOutlineUser } from "react-icons/hi";
-import { LuKeyRound } from 'react-icons/lu';
-
 import MainLayout from "../../layouts/MainLayout";
 import Heading from "../../components/Heading";
 import Button from "./components/Button";
 import MyProfileForm from "./components/MyProfileForm";
 import SecurityForm from "./components/SecurityForm";
+
+import { HiOutlineUser } from "react-icons/hi";
+import { LuKeyRound } from 'react-icons/lu';
 
 export default function MyAccount(){
     const [activeForm, setActiveForm] = useState("profile-form")
