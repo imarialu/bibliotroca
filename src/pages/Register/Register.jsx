@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 import api from "../../services/api";
 
@@ -19,17 +20,19 @@ export default function Register(){
 
     const navigate = useNavigate();
     
-    const handleSubmit = async (e) => {
+    const handleRegister = async (e) => {
         e.preventDefault();
-
         try{
-            const response = await api.post(`/users`, 
-                formData
-            );
-            console.log(response);
-            navigate('/login');
+            const response = await api.post(`/users`, formData);
+
+            if(response){
+                toast.success("Conta criada com sucesso!");
+                navigate('/login');
+            }else{
+                toast.error("Erro ao criar conta." || res.error);
+            }
         }catch(error){
-            console.log("Erro ao cadastrar: ", error);
+            console.log("Erro ao criar conta: ", error);
         }
     }
 
@@ -56,7 +59,7 @@ export default function Register(){
                     </p>
                 </div>
 
-                <form className="flex flex-col mb-5 w-[350px] lg:w-[400px]" onSubmit={handleSubmit}>
+                <form className="flex flex-col mb-5 w-[350px] lg:w-[400px]" onSubmit={handleRegister}>
                     <Input 
                         label={"Nome de usuário"} 
                         value={formData.login}

@@ -10,6 +10,7 @@ import FilledButton from '../../../../components/FilledButton';
 
 import { MdOutlineModeEdit } from 'react-icons/md'; 
 import { MdOutlineDelete } from 'react-icons/md';
+import { toast } from 'sonner';
 
 export default function AvailableBooks({image, status, title, author, uuid, onUpdate}){
     const [confirmModal, setconfirmModal] = useState(false);
@@ -19,11 +20,13 @@ export default function AvailableBooks({image, status, title, author, uuid, onUp
 
     const bookDelete = async () => {
         await deleteBook(uuid);
+        toast.success("Livro deletado!")
         onUpdate()
     };
 
     const exchangeBook = async () => {
         await bookExchange(uuid);
+        toast.success("Livro marcado como trocado!");
         onUpdate()
     };
     
@@ -31,7 +34,7 @@ export default function AvailableBooks({image, status, title, author, uuid, onUp
         <>
             <div className="flex w-[350px] h-[180px] p-3 gap-2 bg-white border rounded-md border-purple-tr">
                 <div className="w-[120px] h-[155px]">
-                    <img src={url + "/img/" + image} alt="Capa do livro" className="w-full h-full rounded-md"/>
+                    <img src={url + "/img/" + image} alt="Capa do livro" className="w-full h-full rounded-md object-cover"/>
                 </div>
 
                 <div className="flex flex-col justify-between w-[250px]">

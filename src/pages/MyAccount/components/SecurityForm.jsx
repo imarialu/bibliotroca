@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "sonner";
 
 import { getUser } from "../../../services/userService";
 import api from "../../../services/api";
@@ -13,14 +14,6 @@ export default function SecurityForm(){
         confirmacaoSenha: ""
     });
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    console.log(formData)
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -35,11 +28,24 @@ export default function SecurityForm(){
                     },
                 }
             );
-            console.log(response);
+
+            if(response){
+                toast.success("Senha alterada com sucesso!");
+                navigate('/');
+            }else{
+                toast.error("Erro ao alterar senha." || res.error);
+            }
         } catch (error) {
             console.log("Erro ao alterar senha: ", error);
         }
     }
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
 
     return(
         <form className="bg-white p-8 rounded-md shadow-cont" onSubmit={handleSubmit}>

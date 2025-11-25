@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { toast } from "sonner";
 
 import url from "../../services/url";
 import api from "../../services/api";
 
 import MainLayout from "../../layouts/MainLayout";
-import Heading from "../../components/Heading";
 import { Input } from "../../components/Input";
 import FilledButton from "../../components/FilledButton";
 
@@ -34,13 +34,6 @@ export default function EditBook(){
         fetchBook();
     }, [book, imagem, genres]);
 
-    const handleChange = (e) => {
-        setBook({
-            ...book,
-            [e.target.name]: e.target.value,
-        })
-    }
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
@@ -54,9 +47,14 @@ export default function EditBook(){
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },
-                });
-            console.log(response);
-            navigate('/meus-livros');
+            });
+
+            if(response){
+                toast.success("Livro editado com sucesso!");
+                navigate('/meus-livros');
+            }else{
+                toast.error("Erro ao editar livro." || res.error);
+            }
         }catch(error){
             console.log("Erro ao editar livro: ", error);
         }
@@ -89,6 +87,13 @@ export default function EditBook(){
         }
     }
 
+    const handleChange = (e) => {
+        setBook({
+            ...book,
+            [e.target.name]: e.target.value,
+        })
+    }
+
     return(
         <>
             <MainLayout>
@@ -108,7 +113,7 @@ export default function EditBook(){
                     <form className="flex flex-col p-8 mb-8 bg-white rounded-sm shadow-cont" onSubmit={handleSubmit}>
                         <div className="flex flex-col md:flex-row xl:grid grid-cols-3">
                             <div className="flex flex-col justify-between mb-10 md:mb-0 md:mr-8 xl:col-span-1 items-center">
-                                <img src={url + "/img/" + book.imagem} className="w-[220px] h-[280px] mb-5 md:mb-0 md:w-[230px] md:h-[85%] rounded-sm bg-gray" />
+                                <img src={url + "/img/" + book.imagem} className="w-[220px] h-[280px] mb-5 md:mb-0 md:w-[230px] md:h-[85%] rounded-sm object-cover"/>
 
                                 <div className="flex w-[230px] md:w-[230px] rounded-full justify-center items-center py-1 px-10 bg-purple-tr text-purple font-semibold cursor-pointer transition duration-400 ease hover:bg-purple-h">
                                     <input type="file" id="imagem" className="hidden" name="imagem" onChange={handleImage} />

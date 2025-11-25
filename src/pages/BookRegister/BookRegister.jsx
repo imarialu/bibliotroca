@@ -66,7 +66,6 @@ export default function BookRegister(){
                     },
                 }
             );
-            
             navigate('/meus-livros');
         }catch(error){
             console.log("Erro ao cadastrar livro: ", error);

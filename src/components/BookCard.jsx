@@ -7,7 +7,7 @@ export function BookCard({image, condition, title, author, user, uuid}){
     return(
         <div className="flex w-[350px] h-[180px] p-3 gap-3 bg-white border rounded-md border-purple-tr transition duration-500 ease hover:shadow-cont">
             <div className="w-[120px] h-[155px]">
-                <img src={url + "/img/" + image} alt="Capa do livro" className="w-full h-full rounded-md"/>
+                <img src={url + "/img/" + image} alt="Capa do livro" className="w-full h-full rounded-md object-cover"/>
             </div>
 
             <div className="flex flex-col justify-between w-[250px]">

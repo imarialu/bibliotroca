@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { toast } from "sonner";
 
 import url from "../../../services/url";
 import api from "../../../services/api";
@@ -25,13 +26,6 @@ export default function MyProfileForm(){
         fetchData();
     }, [icone]); 
 
-    const handleChange = (e) => {
-        setUser({
-            ...user,
-            [e.target.name]: e.target.value,
-        })
-    }
-
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -45,8 +39,13 @@ export default function MyProfileForm(){
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },
-                });
-            console.log(response);
+            });
+            
+            if(response){
+                toast.success("Seus dados foram salvos!");
+            }else{
+                toast.error("Erro ao editar perfil." || res.error);
+            }
         }catch(error){
             console.log("Erro ao editar perfil: ", error);
         }
@@ -76,6 +75,13 @@ export default function MyProfileForm(){
         }catch(error){
             console.log("Erro ao editar icone de perfil: ", error);
         }
+    }
+
+    const handleChange = (e) => {
+        setUser({
+            ...user,
+            [e.target.name]: e.target.value,
+        })
     }
 
     return(

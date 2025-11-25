@@ -44,7 +44,7 @@ export default function BookDetails(){
                         <div className="flex flex-col justify-center md:grid grid-cols-2 xl:grid-cols-3">
                             <div className="col-span-1 flex justify-center">
                                 <div className=" w-[250px] h-[300px] md:w-[230px] md:h-[340px] md:mr-10 xl:mr-12">
-                                    <img src={url + '/img/' + book.imagem} alt="Livro cadastrado" className="w-full h-full rounded-md"/>
+                                    <img src={url + '/img/' + book.imagem} alt="Livro cadastrado" className="w-full h-full rounded-md object-cover"/>
                                 </div>
 
                                 <div className="md:w-[1px] md:h-[100%] md:mr-10 bg-purple"/>

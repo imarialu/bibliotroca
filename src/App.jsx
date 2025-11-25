@@ -8,15 +8,21 @@ import MyAccount from './pages/MyAccount/MyAccount';
 import BookDetails from './pages/BookDetails/BookDetails';
 import EditBook from './pages/EditBook/EditBook';
 import PrivateRoute from './layouts/PrivateRoute';
+import { Toaster } from 'sonner';
 
 function App() {
   return (
     <>
+      {/* Notificações toast */}
+      <Toaster position='top-right' richColors/>
+
       <Router>
         <Routes>
+          {/* Rotas públicas */}
           <Route path='/login' element={<Login/>}/> 
           <Route path='/cadastro' element={<Register/>}/> 
 
+          {/* Rotas privadas */}
           <Route path='/' element={<PrivateRoute/>}>
             <Route index element={<Home/>}/> 
             <Route path='/cadastro-de-livros' element={<BookRegister/>}/> 
