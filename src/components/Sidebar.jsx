@@ -23,7 +23,10 @@ export default function Sidebar(){
             <aside className="flex justify-center items-center w-full py-2 fixed bg-purple md:flex-col md:h-[98%] md:w-[75px] md:p-4 md:rounded-2xl md:m-2">
                 <nav className="flex justify-center items-center w-[95%] md:flex-col md:justify-between md:h-[95%]">
                     <div>
-                        <p className="hidden md:block md:text-darkpurple">LOGO</p>
+                        <div className="hidden md:flex md:justify-center">
+                            <img src="../../public/logo.png" alt="" className="size-[35px]"/>
+                         </div>
+
                         <hr className="hidden md:block md:mt-3 md:text-darkpurple"/>
 
                         <ul className="flex gap-5 items-center md:flex-col md:mt-5">
